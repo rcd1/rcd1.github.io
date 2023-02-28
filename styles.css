@@ -1,8 +1,25 @@
 body {
-    background-color:#620390;
+    background-color:rgb(24, 126, 121);
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 h1 {
-    color:darkgrey;
+    color:black;
     text-align:center;
+}
+
+.assignment {
+    display:flex;
+    padding: 10px;
+    margin:10px;
+    background-color:rgb(115, 148, 84);
+}
+
+.assignment img {
+    width:200px;
+    padding:10px;
+}
+
+a:visited{
+    color:blue;
 }
