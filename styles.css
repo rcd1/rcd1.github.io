@@ -1,3 +1,7 @@
+/* Padding is inside border, margin is outside 
+   Color Palettes can be found at https://color.adobe.com/explore
+   Pure Colors can be found at https://www.w3schools.com/colors/colors_names.asp
+*/
 body {
     background-color: #73294c;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,11 +19,6 @@ h1 {
     background-color:#bf6ba2;
     border-radius:10px;
 }
-
-/* Padding is inside border, margin is outside 
-   Color Palettes can be found at https://color.adobe.com/explore
-   Pure Colors can be found at https://www.w3schools.com/colors/colors_names.asp
-*/
 .assignment img {
     width:200px;
     margin:10px;
