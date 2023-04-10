@@ -15,7 +15,6 @@ h1 {
 
 .assignments {
     display:flex;
-    flex-wrap:wrap;
 }
 
 .assignment {
