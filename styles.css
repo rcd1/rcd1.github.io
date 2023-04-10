@@ -12,18 +12,26 @@ h1 {
     text-align:center;
 }
 
-.assignment {
+.assignments {
+    
     display:flex;
-    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.assignment {
+    width:22%;
+    padding:20px 10px;
     margin:10px;
     background-color:#bf6ba2;
     border-radius:10px;
 }
+
 .assignment img {
     width:200px;
-    margin:10px;
+    
     border:2px solid #73294c;
-
+    display:block;
+    margin:auto;
 }
 
 .assignment img:hover {
@@ -41,6 +49,10 @@ a:hover {
 
 p {
     color:#381123;
+}
+
+h2 {
+    text-align: center;
 }
 
 
