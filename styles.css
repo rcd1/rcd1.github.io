@@ -14,9 +14,8 @@ h1 {
 }
 
 .assignments {
-    
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 .assignment {
@@ -28,8 +27,7 @@ h1 {
 }
 
 .assignment img {
-    width:200px;
-    
+    width:200px;  
     border:2px solid #73294c;
     display:block;
     margin:auto;
