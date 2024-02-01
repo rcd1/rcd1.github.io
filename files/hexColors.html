@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {
+        background-color:#2f345b;
+    }
+    table {
+        background-color: #7f7bb8;
+        border: medium solid black;
+        margin:auto;
+    }
+    tr th {
+        color:#cdd7cc; 
+    }
+    #box1 {
+        border: medium solid black;
+        background-color:#E08CD9;
+        width:100px;
+        height:100px;
+    }
+    #box2 {
+        border: medium solid black;
+        background-color:#2EEA1A;
+        width:100px;
+        height:100px;
+    }
+    #box3 {
+        border: medium solid black;
+        background-color:#AA6686;
+        width:100px;
+        height:100px;
+    }
+    #box4 {
+        border: medium solid black;
+        background-color:#B84D4D;
+        width:100px;
+        height:100px;
+    }
+    button {
+        background-color: #83688f;
+        color:#cdd7cc ;
+    }
+    p {
+        text-align:center;
+    }
+</style>
+<script>
+function randColors(x,y) {
+
+    var min = 0;
+    var max = 16;
+    var rand = 0;
+    var colorCode = "#";
+    for (let index = 0; index < 6; index++) {
+     rand = Math.floor(Math.random() * (max) + min);
+     colorCode = colorCode + rand.toString(16);
+    }
+    x.style.backgroundColor = colorCode;
+    y.innerHTML = colorCode;
+}
+
+function copyCode(x) {
+    var copyText = document.getElementById(x);
+    navigator.clipboard.writeText(copyText.innerText);
+    alert("Copied the text: " + copyText.innerText);
+}
+</script>
+</head>
+
+<body>
+<table>
+    <tr>
+        <th colspan="4">
+            A Color Generator
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <div id="box1" onclick="randColors(document.getElementById('box1'), document.getElementById('box1text'));"></div>
+        </td>
+        <td>
+            <div id="box2" onclick="randColors(document.getElementById('box2'), document.getElementById('box2text'));"></div>
+        </td>
+        <td>
+            <div id="box3" onclick="randColors(document.getElementById('box3'), document.getElementById('box3text'));"></div>
+        </td>
+        <td>
+            <div id="box4" onclick="randColors(document.getElementById('box4'), document.getElementById('box4text'));"></div>
+        </td>
+    </tr>
+    <tr>
+            <th id ="box1text" onclick="copyCode(this.id)">#e08cd9</th>
+            <th id ="box2text" onclick="copyCode(this.id)">#2eea1a</th>
+            <th id ="box3text" onclick="copyCode(this.id)">#aa6686</th>
+            <th id ="box4text" onclick="copyCode(this.id)">#b84d4d</th>
+    </tr>
+    <tr>
+        <th colspan="4">
+            <button onclick="randColors(document.getElementById('box1'), document.getElementById('box1text'));
+            randColors(document.getElementById('box2'), document.getElementById('box2text'));
+            randColors(document.getElementById('box3'), document.getElementById('box3text'));
+            randColors(document.getElementById('box4'), document.getElementById('box4text'));">
+                Click to generate some colors!
+            </button>
+        </th>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <p> You can also click the boxes to regenerate their colors! </p>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
