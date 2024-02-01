@@ -1,0 +1,45 @@
+body {
+    background-color:#2f345b;
+}
+table {
+    background-color: #7f7bb8;
+    border: medium solid black;
+    margin:auto;
+}
+tr th {
+    color:#cdd7cc; 
+}
+th:hover {
+    color: #1f222b;
+}
+#box1 {
+    border: medium solid black;
+    background-color:#E08CD9;
+    width:100px;
+    height:100px;
+}
+#box2 {
+    border: medium solid black;
+    background-color:#2EEA1A;
+    width:100px;
+    height:100px;
+}
+#box3 {
+    border: medium solid black;
+    background-color:#AA6686;
+    width:100px;
+    height:100px;
+}
+#box4 {
+    border: medium solid black;
+    background-color:#B84D4D;
+    width:100px;
+    height:100px;
+}
+button {
+    background-color: #83688f;
+    color:#cdd7cc ;
+}
+p {
+    text-align:center;
+}
