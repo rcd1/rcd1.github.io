@@ -4,12 +4,12 @@
    The settings are setting settily 
 */
 body {
-    background-color: #73294c;
+    background-color: #912045;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 h1 {
-    color:#bd82ac;
+    color:#c399c9;
     text-align:center;
 }
 
@@ -20,11 +20,11 @@ h1 {
 
 .assignment {
     width:22%;
-    padding:20px 10px;
+    padding:20px 20px;
     margin:10px;
     background-color:#bf6ba2;
-    border-radius:10px;
-    box-shadow: 10px 5px 5px #4d2d68;
+    border-radius:20px;
+    /*box-shadow: 10px 5px 5px #6c488a;*/
 }
 
 .assignment img {
