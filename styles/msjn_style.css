@@ -1,16 +1,12 @@
-/* Padding is inside border, margin is outside 
-   Color Palettes can be found at https://color.adobe.com/explore
-   Pure Colors can be found at https://www.w3schools.com/colors/colors_names.asp
-   The settings are setting settily 
-*/
 body {
-    background-color: #912045;
+    background-color: #5b3d8d;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 h1 {
-    color:#c399c9;
+    color:#ca5b9c;
     text-align:center;
+    text-shadow: 2px 2px #381123;
 }
 
 .assignments {
@@ -22,9 +18,9 @@ h1 {
     width:22%;
     padding:20px 20px;
     margin:10px;
-    background-color:#bf6ba2;
+    background-color:#ca5b9c;
     border-radius:20px;
-    /*box-shadow: 10px 5px 5px #6c488a;*/
+    
 }
 
 .assignment img {

@@ -1,0 +1,77 @@
+/* Padding is inside border, margin is outside 
+   Color Palettes can be found at https://color.adobe.com/explore
+   Pure Colors can be found at https://www.w3schools.com/colors/colors_names.asp
+   The settings are setting settily 
+*/
+body {
+    background-color: #a54545;
+    position: relative;
+    overflow: hidden;
+}
+
+
+h1 {
+    color: #e6cff0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.introduction {
+    width: 75%;
+    padding: 20px 20px;
+    margin: 20px auto;
+    background-color: #c399c9;
+    border-radius: 20px;
+    /*box-shadow: 10px 5px 5px #6c488a;*/
+}
+
+.assignments {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.assignment {
+    width: 22%;
+    padding: 20px 20px;
+    margin: 10px;
+    background-color: #c399c9;
+    border-radius: 20px;
+    /*box-shadow: 10px 5px 5px #6c488a;*/
+}
+
+.assignment img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    border: 2px solid #73294c;
+    display: block;
+    margin: auto;
+}
+
+.assignment img:hover {
+    border: 2px solid #f2d5ea;
+}
+
+a {
+    text-decoration: none;
+    color: #4d2d68;
+
+}
+
+a:hover {
+    color: #f2d5ea;
+}
+
+p {
+    color: #381123;
+}
+
+h2 {
+    text-align: center;
+    color: #381123;
+}
+
+a h2 {
+    color:inherit;
+}
