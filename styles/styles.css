@@ -6,9 +6,9 @@
 
 
 body {
-    background-color: #a54545;
+    background-image: url('../images/background.png');
+    background-size: cover;
     position: relative;
-    overflow: hidden;
 }
 
 
@@ -19,37 +19,16 @@ h1 {
 }
 
 .introduction {
-    width: 75%;
-    padding: 20px 20px;
-    margin: 20px auto;
     background-color: #c399c9;
     border-radius: 20px;
-    /*box-shadow: 10px 5px 5px #6c488a;*/
-}
-
-.assignments {
-    flex-wrap:wrap;
-    display:flex;
-    justify-content:center;
-    
 }
 
 .assignment {
-    width: 22%;
-    padding: 20px 20px;
-    margin: 10px;
     background-color: #c399c9;
-    border-radius: 20px;
-    /*box-shadow: 10px 5px 5px #6c488a;*/
 }
 
 .assignment img {
-    width:50%;
-    height:auto;
-    max-width: 200px;  
-    border:2px solid #73294c;
-    display:block;
-    margin:auto;
+    border: 2px solid #73294c;
 }
 
 .assignment img:hover {
@@ -57,7 +36,6 @@ h1 {
 }
 
 a {
-    text-decoration: none;
     color: #4d2d68;
 
 }
@@ -71,10 +49,9 @@ p {
 }
 
 h2 {
-    text-align: center;
     color: #381123;
 }
 
 a h2 {
-    color:inherit;
+    color: inherit;
 }

@@ -2,37 +2,18 @@
 
 body {
     background-color: #5b3d8d;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
 }
 h1 {
     color:#ca5b9c;
-    text-align:center;
     text-shadow: 2px 2px #381123;
 }
 
-.assignments {
-    flex-wrap:wrap;
-    display:flex;
-    justify-content:center;
-    
-}
-
 .assignment {
-    width:22%;
-    padding:20px 20px;
-    margin:10px;
     background-color:#ca5b9c;
-    border-radius:20px;
 }
 
 .assignment img {
-    width:50%;
-    height:auto;
-    max-width: 200px;  
     border:2px solid #73294c;
-    display:block;
-    margin:auto;
 }
 
 .assignment img:hover {
@@ -40,7 +21,6 @@ h1 {
 }
 
 a {
-    text-decoration:none;
     color: #4d2d68;
 }
 
@@ -49,22 +29,5 @@ a:hover {
 }
 
 .assignment p {
-    width:auto;
-    height: 25%;
-    max-height: 80px;
-    color:#381123;
-    text-overflow:clip;
-    overflow:hidden;
-    
+    color:#381123;  
 }
-
-h2 {
-    text-align: center;
-}
-
-img {
-    height: 200px;
-    width: 200px;
-}
-
-

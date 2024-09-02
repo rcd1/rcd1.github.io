@@ -1,13 +1,16 @@
 body {
     background-color:#2f345b;
+    height: 100%;
+    color:#cdd7cc;
 }
 table {
     background-color: #7f7bb8;
     border: medium solid black;
-    margin:auto;
+    margin: 20vh auto;
 }
 tr th {
-    color:#cdd7cc; 
+    color:#cdd7cc;
+    padding: 10px; 
 }
 th:hover {
     color: #1f222b;
