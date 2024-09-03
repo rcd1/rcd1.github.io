@@ -2,11 +2,15 @@ body {
     background-color:#2f345b;
     height: 100%;
     color:#cdd7cc;
+    font-size: larger;
 }
 table {
     background-color: #7f7bb8;
     border: medium solid black;
+    width: 80vh;
+    height: 50vh;
     margin: 20vh auto;
+    padding: 2vw;
 }
 tr th {
     color:#cdd7cc;
@@ -18,30 +22,31 @@ th:hover {
 #box1 {
     border: medium solid black;
     background-color:#E08CD9;
-    width:100px;
-    height:100px;
 }
 #box2 {
     border: medium solid black;
     background-color:#2EEA1A;
-    width:100px;
-    height:100px;
 }
 #box3 {
     border: medium solid black;
     background-color:#AA6686;
-    width:100px;
-    height:100px;
 }
 #box4 {
     border: medium solid black;
     background-color:#B84D4D;
-    width:100px;
-    height:100px;
+}
+
+td div {
+    height: 20vh;
+    width: 20vh;
+    text-align: center;
 }
 button {
     background-color: #83688f;
-    color:#cdd7cc ;
+    color:#cdd7cc;
+    font-size: large;
+    height: 8vh;
+    padding: 1vw;
 }
 p {
     text-align:center;
