@@ -6,37 +6,29 @@
 
 
 body {
+    padding: 0;
     background-image: url('../images/mystars.png');
     background-size: cover;
-    position: relative;
+    
 }
 
+html, body {
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
 h1 {
     color: #b384c7;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.introduction {
-    background-color: #c399c9;
-    border-radius: 20px;
-}
-
-.assignment {
-    background-color: #c399c9;
-}
-
-.assignment img {
-    border: 2px solid #73294c;
-}
-
-.assignment img:hover {
-    border: 2px solid #f2d5ea;
 }
 
 a {
-    color: #4d2d68;
+    color: #663c88;
 
 }
 
@@ -55,3 +47,51 @@ h2 {
 a h2 {
     color: inherit;
 }
+
+.centered_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    overflow-y: auto;
+    
+}
+
+table {
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    table-layout: fixed;
+    overflow-x: hidden;
+    height: auto;
+    word-wrap: break-word;
+    border: 1px solid #b384c7;
+}
+
+th, td {
+    border: 1px solid #b384c7;
+    padding: 0.5vh 1vw;
+    height: auto;
+    text-align: center;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+tr {
+    background: rgba(0,0,0,0.6);
+    height: auto;
+    width: 100vw;
+    word-wrap: break-word;
+    
+}
+
+th:empty, td:empty {
+    display: none;
+}
+
+
+

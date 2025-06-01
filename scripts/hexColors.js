@@ -1,12 +1,8 @@
 function randColors(x,y) {
-
-    var min = 0;
-    var max = 16;
-    var rand = 0;
+    var hex = "0123456789ABCDEF";
     var colorCode = "#";
     for (let index = 0; index < 6; index++) {
-     rand = Math.floor(Math.random() * (max) + min);
-     colorCode = colorCode + rand.toString(16);
+     colorCode += hex[Math.vloor(Math.random()*16)];
     }
     x.style.backgroundColor = colorCode;
     y.innerHTML = colorCode;

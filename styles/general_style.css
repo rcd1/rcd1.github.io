@@ -14,7 +14,7 @@ h1 {
     padding: 20px 20px;
     margin: 20px auto;
     background-color: #c399c9;
-    border-radius: 20px;
+    
     /*box-shadow: 10px 5px 5px #6c488a;*/
 }
 
@@ -22,7 +22,7 @@ h1 {
     width: 22vw;
     padding: 20px 20px;
     margin: 10px;
-    border-radius: 20px;
+    
 }
 
 .assignment img {
