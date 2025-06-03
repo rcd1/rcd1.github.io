@@ -1,57 +1,116 @@
 body {
-            background-image: url('../images/mystars.webp');
-            background-size: cover;
-        }
+    background-image: url('../images/mystars.webp');
+    background-size: cover;
+}
 
-        h1 {
-            color: #b384c7;
-        }
+h1 {
+    color: #b384c7;
+}
 
-        a {
-            color: #663c88;
+a {
+    color: #663c88;
 
-        }
+}
 
-        a:hover {
-            color: #f2d5ea;
-        }
+a:hover {
+    color: #f2d5ea;
+}
 
-        p {
-            color: #ac6687;
-            padding: 0;
-            margin: 0;
-        }
+#kitty:hover {
+    cursor: pointer;
+    color: #fff;
+}
 
-        h2 {
-            color: #381123;
-        }
+p {
+    color: #ac6687;
+    padding: 0;
+    margin: 0;
+}
 
-        a h2 {
-            color: inherit;
-        }
+h2 {
+    color: #b3497a;
+}
 
-        thead tr {
-            border: 1px solid #b384c7;
-        }
+h3 {
+    color: #ac6687;
+    padding: 0;
+    margin: 0;
+}
 
-        table {
-            border: 2px solid #b384c738;
-        }
+a h2 {
+    color: inherit;
+}
 
-        thead {
-            align-self: center;
-        }
+ul {
+    list-style-type: "-> ";
+    width: fit-content;
+}
+li {
+    width: fit-content;
+}
 
-        tbody {
-            border: 1px solid #b384c7;
-            align-self:center;
-        }
-        
-        tfoot {
-            font-size: 7px;
-        }
+tr {
+    width: inherit;
+}
 
-        tfoot th:last-child {
-            position: absolute;
-            right:0;
-        }
+th {
+    width: inherit;
+}
+
+thead {
+    align-self: center;
+    width: 70vw;
+}
+
+thead tr {
+    border: 1px solid #b384c7;
+    width: inherit;
+}
+
+
+tbody tr th {
+    border: 1px solid #b384c7;
+}
+
+.headers {
+    
+}
+
+.descriptions {
+    height: 10vh;
+    color:#b384c7;
+    font-size: small;
+}
+
+
+.outer_table {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.outer_table tbody {
+    align-self: center;
+    width: 90vw;
+    height: 70vh;
+}
+
+.small_table tbody {
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding:0;
+    margin:0;
+}
+
+tfoot {
+    font-size: .8rem;
+}
+
+tfoot th:last-child {
+    position: absolute;
+    right: 0;
+}

@@ -15,19 +15,9 @@ body {
     overflow: hidden;
 }
 
-.centered_container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    overflow-y: auto;
-
-}
-
 table {
     border-collapse: collapse;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
     table-layout: fixed;
     overflow-x: hidden;
@@ -39,8 +29,7 @@ table {
 
 th {
 
-    padding: 0.5vh 1vw;
-    height: auto;
+    padding: 0.5vh .5vw;
     text-align: center;
     white-space: nowrap;
     word-wrap: break-word;
