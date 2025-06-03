@@ -93,11 +93,13 @@ function randomTitle() {
         "GOTTA SWEEP SWEEP SWEEP",
         "Is that that Bite of 87??",
         "DO NOT THE CAT",
-        "Together we will devour the very gods",
+        "I AM JUST A FISH",
         "Hive Approaching! Bring a Sword",
         "Bank and you'll summon a Primevil!",
         "Guardian, we stand on the precipice of a war with the cabal",
-        "You can play as Luigi now"
+        "You can play as Luigi now",
+        "I, Gammon, will save us",
+        "and I'm all out of gum"
     ];
     document.title = titles[Math.floor(Math.random() * titles.length)]
 

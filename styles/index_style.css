@@ -1,0 +1,57 @@
+body {
+            background-image: url('../images/mystars.webp');
+            background-size: cover;
+        }
+
+        h1 {
+            color: #b384c7;
+        }
+
+        a {
+            color: #663c88;
+
+        }
+
+        a:hover {
+            color: #f2d5ea;
+        }
+
+        p {
+            color: #ac6687;
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 {
+            color: #381123;
+        }
+
+        a h2 {
+            color: inherit;
+        }
+
+        thead tr {
+            border: 1px solid #b384c7;
+        }
+
+        table {
+            border: 2px solid #b384c738;
+        }
+
+        thead {
+            align-self: center;
+        }
+
+        tbody {
+            border: 1px solid #b384c7;
+            align-self:center;
+        }
+        
+        tfoot {
+            font-size: 7px;
+        }
+
+        tfoot th:last-child {
+            position: absolute;
+            right:0;
+        }
