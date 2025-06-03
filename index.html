@@ -3,40 +3,66 @@
 <head>
     <title>Welcome to my page! o/</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/rainbow.js"></script>
+    <style>
+        body {
+            background-image: url('images/mystars.png');
+            background-size: cover;
+        }
+
+        h1 {
+            color: #b384c7;
+        }
+
+        a {
+            color: #663c88;
+
+        }
+
+        a:hover {
+            color: #f2d5ea;
+        }
+
+        p {
+            color: #6e3650;
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 {
+            color: #381123;
+        }
+
+        a h2 {
+            color: inherit;
+        }
+
+        thead tr {
+            border: 1px solid #b384c7;
+        }
+
+        table {
+            border: 2px solid #b384c738;
+        }
+
+        thead {
+            align-self: center;
+        }
+
+        tbody {
+            align-self: center;
+        }
+
+        tfoot {
+            align-self: end;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <table class="centered_container">
         <thead>
-            <tr>
-                <th>
-                    <h1>hello</h1>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <h1>hello</h1>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <h1>hello</h1>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <h1>hello</h1>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <h1>hello</h1>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
             <tr>
                 <th colspan="3">
                     <h1><span id="rainbow">rcd1.github.io</span></h1>
@@ -52,14 +78,20 @@
                 <td><a>Game(s)</a></td>
                 <td><a></a></td>
             </tr>
+            <tr>
+                <td colspan="5">
+                    <p>Last Updated: 6/2/2025</p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
         </tbody>
-
         <tfoot>
-            <tr>    <th><p>hi</p></th>   </tr>
-            <tr>    <th><p>hi</p></th>   </tr>
-            <tr>    <th><p>hi</p></th>   </tr>
-            <tr>    <th><p>hi</p></th>   </tr>
-            <tr>    <th><p>hi</p></th>   </tr>
+            <tr>
+                <th>
+                    <p><i>MyStars.png</i> by me, 2025</p>
+                </th>
+            </tr>
         </tfoot>
     </table>
 </body>

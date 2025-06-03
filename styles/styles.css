@@ -3,62 +3,24 @@
    Pure Colors can be found at https://www.w3schools.com/colors/colors_names.asp
    The settings are setting settily 
 */
-
-
-body {
-    padding: 0;
-    background-image: url('../images/mystars.png');
-    background-size: cover;
-
-}
-
 html,
 body {
     height: 100%;
     width: 100vw;
-    margin: 0;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
-h1 {
-    color: #b384c7;
-}
-
-a {
-    color: #663c88;
-
-}
-
-a:hover {
-    color: #f2d5ea;
-}
-
-p {
-    color: #6e3650;
-    margin:0;
-    padding:0;
-}
-
-h2 {
-    color: #381123;
-}
-
-a h2 {
-    color: inherit;
-}
-
 .centered_container {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    padding: 0;
-    margin: 0;
     overflow-y: auto;
 
 }
@@ -72,11 +34,10 @@ table {
     height: auto;
     font-family: monospace;
     word-wrap: break-word;
-    /*border: 1px solid #b384c7;*/
 }
 
 th {
-    
+
     padding: 0.5vh 1vw;
     height: auto;
     text-align: center;
@@ -85,7 +46,7 @@ th {
 }
 
 td {
-    
+
     text-align: center;
     white-space: nowrap;
     word-wrap: break-word;
@@ -94,11 +55,7 @@ td {
 
 tr {
     background: rgba(0, 0, 0, 0.6);
-    border: 1px solid #b384c7;
-    height: auto;
-    width: 100vw;
     word-wrap: break-word;
-
 }
 
 th:empty,
