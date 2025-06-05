@@ -3,15 +3,11 @@
 body {
     background-image: url('../images/myplanet.png');
     background-size: cover;
-    position: relative;
 }
 h1 {
     color:#ca5b9c;
     text-shadow: 2px 2px #381123;
-}
-
-.assignment {
-    background-color:#ca5b9c;
+    text-wrap: wrap;
 }
 
 .assignment img {
@@ -22,14 +18,25 @@ h1 {
     border:2px solid #f2d5ea;
 }
 
-a {
-    color: #4d2d68;
+a h3 {
+    color:#ca5b9c;
+    padding-bottom: 10px;
 }
 
 a:hover {
-    color:#f2d5ea;
+    color:#fcfcfc;
 }
 
 .assignment p {
-    color:#381123;  
+    text-wrap: wrap;  
+}
+
+p {
+    font-size: medium;
+    height: 5vh;
+}
+
+.outer_table tbody {
+    border-collapse: separate;
+    justify-content: space-between;
 }

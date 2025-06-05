@@ -1,19 +1,6 @@
 body {
-    background-image: url('../images/mystars.webp');
+    background-image: url('../images/backgrounds/mystars.webp');
     background-size: cover;
-}
-
-h1 {
-    color: #b384c7;
-}
-
-a {
-    color: #663c88;
-
-}
-
-a:hover {
-    color: #f2d5ea;
 }
 
 #kitty:hover {
@@ -21,96 +8,4 @@ a:hover {
     color: #fff;
 }
 
-p {
-    color: #ac6687;
-    padding: 0;
-    margin: 0;
-}
 
-h2 {
-    color: #b3497a;
-}
-
-h3 {
-    color: #ac6687;
-    padding: 0;
-    margin: 0;
-}
-
-a h2 {
-    color: inherit;
-}
-
-ul {
-    list-style-type: "-> ";
-    width: fit-content;
-}
-li {
-    width: fit-content;
-}
-
-tr {
-    width: inherit;
-}
-
-th {
-    width: inherit;
-}
-
-thead {
-    align-self: center;
-    width: 70vw;
-}
-
-thead tr {
-    border: 1px solid #b384c7;
-    width: inherit;
-}
-
-
-tbody tr th {
-    border: 1px solid #b384c7;
-}
-
-.headers {
-    
-}
-
-.descriptions {
-    height: 10vh;
-    color:#b384c7;
-    font-size: small;
-}
-
-
-.outer_table {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    overflow-y: auto;
-}
-
-.outer_table tbody {
-    align-self: center;
-    width: 90vw;
-    height: 70vh;
-}
-
-.small_table tbody {
-    align-items: center;
-    justify-content: space-between;
-    height: auto;
-    padding:0;
-    margin:0;
-}
-
-tfoot {
-    font-size: .8rem;
-}
-
-tfoot th:last-child {
-    position: absolute;
-    right: 0;
-}

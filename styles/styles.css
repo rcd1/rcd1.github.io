@@ -1,54 +1,148 @@
-/* Padding is inside border, margin is outside 
-   Color Palettes can be found at https://color.adobe.com/explore
-   Pure Colors can be found at https://www.w3schools.com/colors/colors_names.asp
-   The settings are setting settily 
+/* General Notes:
+   - Padding is inside border; margin is outside.
+   - Color palettes: https://color.adobe.com/explore.
+   - Pure colors: https://www.w3schools.com/colors/colors_names.asp.
 */
+
 html,
 body {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    word-wrap: break-word;
+    color:#b2a1b9;
 }
 
+/* Table Styles */
 table {
     border-collapse: collapse;
     font-size: 1.3rem;
+    font-family: monospace;
     letter-spacing: 1px;
     table-layout: fixed;
     overflow-x: hidden;
     height: auto;
-    font-family: monospace;
-    word-wrap: break-word;
     position: relative;
+    
+}
+
+thead {
+    align-self: center;
+    width: 70vw;
+}
+
+th,
+td {
+    text-align: center;
+    white-space: nowrap;
+    width: inherit;
 }
 
 th {
-
-    padding: 0.5vh .5vw;
-    text-align: center;
-    white-space: nowrap;
-    word-wrap: break-word;
+    padding: 0.5vh 0.5vw;
 }
 
 td {
-
-    text-align: center;
-    white-space: nowrap;
-    word-wrap: break-word;
     padding: 0.1vh 0.1vw;
 }
 
 tr {
     background: rgba(0, 0, 0, 0.6);
-    word-wrap: break-word;
+    width: inherit;
 }
 
+
+h1 {
+    color: #b384c7;
+}
+
+a {
+    color: #663c88;
+}
+
+a:hover {
+    color: #f2d5ea;
+}
+
+p {
+    color:#b2a1b9;
+}
+
+h2 {
+    color: #b3497a;
+}
+
+h3 {
+    color: #ac6687;
+}
+
+thead th, tbody th, thead tr {
+    border: 1px solid #b384c7;
+}
+
+
+/* Hide empty cells */
 th:empty,
 td:empty {
     display: none;
+}
+
+/* Layout Containers */
+.outer_table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.outer_table tbody {
+    align-self: center;
+}
+
+.small_table tbody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/* Description Styling */
+.descriptions {
+    height: 10vh;
+    font-size: small;
+}
+
+/* Footer Styles */
+tfoot {
+    font-size: 0.8rem;
+}
+
+tfoot th:last-child {
+    position: absolute;
+    right: 0;
+}
+
+/* Miscellaneous */
+p,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: "-> ";
+    width: fit-content;
+}
+
+li {
+    width: fit-content;
 }
