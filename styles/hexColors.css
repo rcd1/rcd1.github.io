@@ -14,26 +14,41 @@ table {
     padding: 2vw;
 }
 tr th {
-    color:#cdd7cc;
+    color: #1f222b;
     padding: 10px; 
 }
-th:hover {
+
+td {
     color: #1f222b;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
 }
-#box1 {
+
+th:hover {
+    color:#cdd7cc;
+    cursor: pointer;
+}
+
+div:hover {
+    cursor: pointer;
+    border:medium solid #cdd7cc;
+}
+
+div {
     border: medium solid black;
+}
+
+#box1 {
     background-color:#E08CD9;
 }
 #box2 {
-    border: medium solid black;
     background-color:#2EEA1A;
 }
 #box3 {
-    border: medium solid black;
     background-color:#AA6686;
 }
 #box4 {
-    border: medium solid black;
     background-color:#B84D4D;
 }
 
@@ -44,11 +59,18 @@ td div {
 }
 button {
     background-color: #83688f;
-    color:#cdd7cc;
+    color: #1f222b;
     font-size: large;
     height: 8vh;
     padding: 1vw;
 }
+
+
+button:hover {
+    cursor:pointer;
+    color:#cdd7cc;
+}
+
 p {
     text-align:center;
 }

@@ -1,9 +1,8 @@
-body {
-    background-color: #0d1257;
-}
+
 h1 {
     color:#4f80da;
     text-shadow: 2px 2px #381123;
+    text-align: center;
 }
 
 .assignment {
@@ -21,6 +20,7 @@ h1 {
 
 a {
     color: #303550;
+    text-decoration: none;
 }
 
 a:hover {
@@ -29,4 +29,62 @@ a:hover {
 
 .assignment p {
     color:#303550;;  
+}
+
+body {
+    width:100vw;
+    height:100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #0d1257;
+}
+
+
+.introduction {
+    width: 75%;
+    padding: 20px 20px;
+    margin: 20px auto;
+    background-color: #c399c9;
+    border-radius: 20px;
+    /*box-shadow: 10px 5px 5px #6c488a;*/
+}
+
+.assignment {
+    width: 22vw;
+    padding: 20px 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.assignment img {
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+}
+
+.assignment img:hover {
+    border: 2px solid #f2d5ea;
+}
+
+.assignments {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.assignment p {
+    width: auto;
+    text-overflow: clip;
+    overflow-y: auto;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
 }

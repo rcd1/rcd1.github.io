@@ -1,0 +1,13 @@
+.outer_table tbody {
+    border-collapse: separate;
+    justify-content: space-between;
+}
+
+p {
+    font-size: medium;
+    height: 5vh;
+}
+
+* {
+    text-wrap-mode: wrap;
+}
