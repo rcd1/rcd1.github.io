@@ -3,7 +3,7 @@ body {
     background-size: cover;
 }
 
-
+/*  Kitty Styles  */
 #kitty:hover {
     cursor: pointer;
     color: #fff;

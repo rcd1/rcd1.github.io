@@ -1,37 +1,48 @@
-
 h1 {
-    color:#ca5b9c;
+    color: #ca5b9c;
     text-shadow: 2px 2px #381123;
     text-wrap: wrap;
 }
 
+/*  Assignment Images  */
 .assignment img {
-    border:2px solid #73294c;
+    border: 2px solid #73294c;
 }
 
 .assignment img:hover {
-    border:2px solid #f2d5ea;
+    border: 2px solid #f2d5ea;
 }
 
+/*  Assignment Headings  */
 a h3 {
-    color:#ca5b9c;
+    color: #ca5b9c;
     padding-bottom: 10px;
 }
 
 a:hover {
-    color:#fcfcfc;
+    color: #fcfcfc;
 }
 
+/*  Assignment Paragraphs  */
 .assignment p {
-    text-wrap: wrap;  
+    text-wrap: wrap;
 }
 
+/*  General Paragraphs  */
 p {
     font-size: medium;
     height: 5vh;
 }
 
+/*  Table Styles  */
 .outer_table tbody {
     border-collapse: separate;
     justify-content: space-between;
+}
+
+/*  General Images  */
+
+img {
+    height: 200px;
+    width: 200px;
 }

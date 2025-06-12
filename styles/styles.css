@@ -1,13 +1,13 @@
-/* General Notes:
+/*  General Notes 
    - Padding is inside border; margin is outside.
    - Color palettes: https://color.adobe.com/explore.
    - Pure colors: https://www.w3schools.com/colors/colors_names.asp.
 */
 
+/*  Reset & Base Styles  */
 * {
     text-wrap-mode: wrap;
 }
-
 
 html,
 body {
@@ -19,10 +19,10 @@ body {
     justify-content: center;
     align-items: center;
     word-wrap: break-word;
-    color:#b2a1b9;
+    color: #b2a1b9;
 }
 
-/* Table Styles */
+/*  Table Styles  */
 table {
     border-collapse: collapse;
     font-size: 1.3rem;
@@ -31,7 +31,6 @@ table {
     table-layout: fixed;
     height: auto;
     position: relative;
-    
 }
 
 thead {
@@ -59,36 +58,11 @@ tr {
     width: inherit;
 }
 
-
-h1 {
-    color: #b384c7;
-}
-
-a {
-    color: #663c88;
-}
-
-a:hover {
-    color: #f2d5ea;
-}
-
-p {
-    color:#b2a1b9;
-    overflow-y: auto;
-}
-
-h2 {
-    color: #b3497a;
-}
-
-h3 {
-    color: #ac6687;
-}
-
-thead th, tbody th, thead tr {
+thead th,
+tbody th,
+thead tr {
     border: 1px solid #b384c7;
 }
-
 
 /* Hide empty cells */
 th:empty,
@@ -96,7 +70,7 @@ td:empty {
     display: none;
 }
 
-/* Layout Containers */
+/*  Layout Containers  */
 .outer_table {
     display: flex;
     flex-direction: column;
@@ -119,13 +93,13 @@ td:empty {
     margin: 0;
 }
 
-/* Description Styling */
+/*  Description Styling  */
 .descriptions {
     height: 10vh;
     font-size: small;
 }
 
-/* Footer Styles */
+/*  Footer Styles  */
 tfoot {
     font-size: 0.8rem;
 }
@@ -135,13 +109,38 @@ tfoot th:last-child {
     right: 0;
 }
 
-/* Miscellaneous */
-p,
+/*  Text Styles  */
+h1 {
+    color: #b384c7;
+}
+
+h2 {
+    color: #b3497a;
+}
+
 h3 {
+    color: #ac6687;
     padding: 0;
     margin: 0;
 }
 
+p {
+    color: #b2a1b9;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/*  Links  */
+a {
+    color: #663c88;
+}
+
+a:hover {
+    color: #f2d5ea;
+}
+
+/*  Lists  */
 ul {
     list-style-type: "-> ";
     width: fit-content;

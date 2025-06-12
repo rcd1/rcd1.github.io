@@ -1,10 +1,4 @@
-/* Padding is inside border, margin is outside 
-   Color Palettes can be found at https://color.adobe.com/explore
-   Pure Colors can be found at https://www.w3schools.com/colors/colors_names.asp
-   The settings are setting settily 
-*/
-
-
+/* Maybe One Day You'll See the Light of Day */
 body {
     height: 100vh;
     margin: 0;
@@ -47,7 +41,6 @@ h2 {
     margin: 20px auto;
     background-color: var(--assignment_background);
     border-radius: 20px;
-    /*box-shadow: 10px 5px 5px #6c488a;*/
 }
 
 .assignment {
@@ -56,7 +49,6 @@ h2 {
     margin: 10px;
     background-color: var(--assignment_background);
     border-radius: 20px;
-    /*box-shadow: 10px 5px 5px #6c488a;*/
 }
 
 .assignment img {
