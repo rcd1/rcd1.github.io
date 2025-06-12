@@ -1,10 +1,13 @@
+/*  Base Styles  */
 body {
     background-color:#2f345b;
+    color: #cdd7cc;
+    font-size: larger;
     height: 100vh;
     width: 100vw;
-    color:#cdd7cc;
-    font-size: larger;
 }
+
+/*  Table Styles  */
 table {
     background-color: #7f7bb8;
     border: medium solid black;
@@ -18,16 +21,21 @@ tr th {
     padding: 10px; 
 }
 
-td {
-    color: #1f222b;
-    padding: 10px;
-    text-align: center;
-    font-size: larger;
-}
-
 th:hover {
     color:#cdd7cc;
     cursor: pointer;
+}
+
+td {
+    color: #1f222b;
+    font-size: larger;
+    padding: 10px;
+    text-align: center;
+}
+
+/*  Box Styles  */
+div {
+    border: medium solid black;
 }
 
 div:hover {
@@ -35,10 +43,13 @@ div:hover {
     border:medium solid #cdd7cc;
 }
 
-div {
-    border: medium solid black;
+td div {
+    height: 20vh;
+    width: 20vh;
+    text-align: center;
 }
 
+/* Individual Box Colors */
 #box1 {
     background-color:#E08CD9;
 }
@@ -52,11 +63,7 @@ div {
     background-color:#B84D4D;
 }
 
-td div {
-    height: 20vh;
-    width: 20vh;
-    text-align: center;
-}
+/*  Button Styles  */
 button {
     background-color: #83688f;
     color: #1f222b;
@@ -71,6 +78,7 @@ button:hover {
     color:#cdd7cc;
 }
 
+/*  Paragraph Styles  */
 p {
     text-align:center;
 }

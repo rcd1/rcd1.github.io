@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="stylesheet" href="styles\hexColors.css">
-<script src="scripts\hexColors.js">
-</script>
+    <link rel="stylesheet" href="styles\hexColors.css">
+    <script src="scripts\hexColors.js"></script>
+    <script src="scripts/randomTitles.js"></script>
 </head>
 
 <body>
-<table>
-    <tr>
-        <td colspan="4">
-            A Color Generator
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div id="box1" onclick="randColors(document.getElementById('box1'), document.getElementById('box1text'));"></div>
-        </td>
-        <td>
-            <div id="box2" onclick="randColors(document.getElementById('box2'), document.getElementById('box2text'));"></div>
-        </td>
-        <td>
-            <div id="box3" onclick="randColors(document.getElementById('box3'), document.getElementById('box3text'));"></div>
-        </td>
-        <td>
-            <div id="box4" onclick="randColors(document.getElementById('box4'), document.getElementById('box4text'));"></div>
-        </td>
-    </tr>
-    <tr>
-            <th id ="box1text" onclick="copyCode(this.id)">#e08cd9</th>
-            <th id ="box2text" onclick="copyCode(this.id)">#2eea1a</th>
-            <th id ="box3text" onclick="copyCode(this.id)">#aa6686</th>
-            <th id ="box4text" onclick="copyCode(this.id)">#b84d4d</th>
-    </tr>
-    <tr>
-        <td colspan="4">
-            <button onclick="randColors(document.getElementById('box1'), document.getElementById('box1text'));
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="4">
+                    A Color Generator
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="box1"
+                        onclick="randColors(document.getElementById('box1'), document.getElementById('box1text'));">
+                    </div>
+                </td>
+                <td>
+                    <div id="box2"
+                        onclick="randColors(document.getElementById('box2'), document.getElementById('box2text'));">
+                    </div>
+                </td>
+                <td>
+                    <div id="box3"
+                        onclick="randColors(document.getElementById('box3'), document.getElementById('box3text'));">
+                    </div>
+                </td>
+                <td>
+                    <div id="box4"
+                        onclick="randColors(document.getElementById('box4'), document.getElementById('box4text'));">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th id="box1text" onclick="copyCode(this.id)">#e08cd9</th>
+                <th id="box2text" onclick="copyCode(this.id)">#2eea1a</th>
+                <th id="box3text" onclick="copyCode(this.id)">#aa6686</th>
+                <th id="box4text" onclick="copyCode(this.id)">#b84d4d</th>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <button onclick="randColors(document.getElementById('box1'), document.getElementById('box1text'));
             randColors(document.getElementById('box2'), document.getElementById('box2text'));
             randColors(document.getElementById('box3'), document.getElementById('box3text'));
             randColors(document.getElementById('box4'), document.getElementById('box4text'));">
-                Click to generate a full set of colors!
-            </button>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="4">
-            <p> You can click individual boxes to regenerate their color as well.</p>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="4">
-            <p> You can also click the color codes to copy them!</p>
-        </td>
-    </tr>
-    
-</table>
+                        Click to generate a full set of colors!
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p> You can click individual boxes to regenerate their color as well.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p> You can also click the color codes to copy them!</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
