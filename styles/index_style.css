@@ -9,5 +9,9 @@ body {
     color: #fff;
 }
 
+tbody {
+    width: 70vw;
+}
+
 
 
