@@ -1,9 +1,9 @@
-//Change color every second
+// Change color every second
 setInterval(rainbow, 1000);
 function rainbow() {
-    // i.c. random color
-    var ic = document.getElementById('rainbow');
-    ic.style.color = getRandomColor();
+  // i.c. random color
+  var ic = document.getElementById('rainbow');
+  ic.style.color = getRandomColor();
 }
 
 // Random Colors, returns hex value
