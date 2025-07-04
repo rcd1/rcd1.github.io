@@ -104,11 +104,6 @@ tfoot {
     font-size: 0.8rem;
 }
 
-tfoot th:last-child {
-    position: absolute;
-    right: 0;
-}
-
 /*  Text Styles  */
 h1 {
     color: #b384c7;
@@ -143,9 +138,10 @@ a:hover {
 /*  Lists  */
 ul {
     list-style-type: "-> ";
-    width: fit-content;
+    width:auto;
 }
 
 li {
     width: fit-content;
+    padding:2px;
 }
