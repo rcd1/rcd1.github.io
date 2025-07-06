@@ -1,3 +1,25 @@
+/* Custom Scrollbar Styles */
+/* For Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 4px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #b2a1b9;
+    border-radius: 1px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #b2a1b9 transparent;
+}
 /*  General Notes 
    - Padding is inside border; margin is outside.
    - Color palettes: https://color.adobe.com/explore.
@@ -82,6 +104,7 @@ td:empty {
 
 .outer_table tbody {
     align-self: center;
+    width: 70vw; 
 }
 
 .small_table tbody {
@@ -146,4 +169,11 @@ ul {
 li {
     width: fit-content;
     padding:2px;
+}
+
+/* Iframes */
+
+iframe {
+    border: none;
+    background-color: transparent;
 }

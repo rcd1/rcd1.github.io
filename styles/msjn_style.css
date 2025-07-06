@@ -26,6 +26,7 @@ a:hover {
 /*  Assignment Paragraphs  */
 .assignment p {
     text-wrap: wrap;
+    height: 10vh;
 }
 
 /*  General Paragraphs  */
