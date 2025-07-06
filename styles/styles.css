@@ -139,6 +139,8 @@ a:hover {
 ul {
     list-style-type: "-> ";
     width:auto;
+    max-height: 35vh;
+    overflow-y: scroll;
 }
 
 li {

@@ -1,8 +1,8 @@
 // Change color every second
+const ic = document.getElementById('rainbow');
 setInterval(rainbow, 1000);
 function rainbow() {
   // i.c. random color
-  var ic = document.getElementById('rainbow');
   ic.style.color = getRandomColor();
 }
 
