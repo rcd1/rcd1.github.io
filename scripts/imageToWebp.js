@@ -43,7 +43,7 @@ function handleFiles(files) {
                 // Want the original file name. so find extension with regex 
                 // (find string that starts with a dot, and is followed by any characters except a dot 
                 // to the '$' end of the string)
-                const originalName = file.name.replace(/\.[^/.]+$/, "") + ".webp";
+                const originalName = file.name.replace(/\.[^/.]+$/, ".webp");
                 output.innerHTML = `<a href=\"${url}\" download=\"${originalName}\">Download .webp</a><br><img src=\"${url}\" style=\"max-width:400px;max-height:400px;\">`;
             }, 'image/webp');
         };
