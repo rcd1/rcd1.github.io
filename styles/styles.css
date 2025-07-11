@@ -104,7 +104,7 @@ td:empty {
 
 .outer_table tbody {
     align-self: center;
-    width: 70vw; 
+    width: 70vw;
 }
 
 .small_table tbody {
@@ -169,6 +169,10 @@ ul {
 li {
     width: fit-content;
     padding:2px;
+}
+
+.date {
+    list-style: '* ';
 }
 
 /* Iframes */

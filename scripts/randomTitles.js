@@ -1,7 +1,7 @@
 randomTitle();
-// 
+// This script randomly changes the document title to one of the predefined titles.
 function randomTitle() {
-    var titles = [
+    const titles = [
         "Welcome Home!", 
         "It's been a long day...", 
         "That looks like the battlepass", 

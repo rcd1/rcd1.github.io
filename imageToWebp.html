@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image to WebP Converter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/randomTitles.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel=stylesheet href="styles/imageToWebp_style.css">
+    <link rel="preload" href="images/backgrounds/mystars.webp" as="image">
+    <style>
+        body {
+            background-image: url(images/backgrounds/mystars.webp);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="outer_table">
+        <thead>
+            <tr>
+                <th colspan="4">
+                    <h1>An Image Converter!</h1>
+                </th>
+            </tr>
+            <tr id="nav">
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="drop-area">
+
+                    <p>Drag & drop an image here</p>
+                    <input type="file" id="fileElem" accept="image/*" style="display:none">
+                    <button onclick="fileElem.click()">Or select a file</button>
+
+                </th>
+            </tr>
+            <tr>
+                <th id="output">
+                    <p>Your Converted Image Will Show Up Here</p>
+                </th>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</body>
+<script src="scripts/imageToWebp.js"></script>
+<script src="scripts/addNav.js"></script>
+
+
+</html>
