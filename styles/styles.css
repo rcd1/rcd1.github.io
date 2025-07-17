@@ -4,13 +4,16 @@
     width: 4px;
     background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #b2a1b9;
     border-radius: 1px;
 }
+
 ::-webkit-scrollbar-track {
     background: transparent;
 }
+
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
@@ -20,6 +23,7 @@
     scrollbar-width: thin;
     scrollbar-color: #b2a1b9 transparent;
 }
+
 /*  General Notes 
    - Padding is inside border; margin is outside.
    - Color palettes: https://color.adobe.com/explore.
@@ -31,6 +35,8 @@
     text-wrap-mode: wrap;
 }
 
+
+/*  I would like to thank https://insect.christmas/ for showing me something like this was possible  */
 html,
 body {
     height: 100%;
@@ -161,14 +167,14 @@ a:hover {
 /*  Lists  */
 ul {
     list-style-type: "-> ";
-    width:auto;
+    width: auto;
     max-height: 35vh;
     overflow-y: scroll;
 }
 
 li {
     width: fit-content;
-    padding:2px;
+    padding: 2px;
 }
 
 .date {

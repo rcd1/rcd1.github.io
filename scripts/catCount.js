@@ -1,7 +1,7 @@
 var kitty = document.getElementById("kitty");
 var mody = document.getElementById("mody");
 const kittyImage = 'ᓚᘏᗢ';
-
+/*  I would like to thank https://insect.christmas/ for showing me something like this was possible  */
 let kittyClicks = localStorage.getItem('kitty_clicks') || 0;
 let storedKittyImage = localStorage.getItem('kitty_image');
 kitty.innerHTML = storedKittyImage !== null ? storedKittyImage : kittyImage;
