@@ -4,9 +4,9 @@ addFaviconToPage();
 function addNavigationToPage() {
     let nav = document.getElementById("nav");
     nav.innerHTML = "<td><a href=\"index.html\" target=\"_parent\">Home</a></td> " +
-    "<td><a href=\"pages\\projects.html\" target=\"_parent\">Projects</a></td>" +
-    "<td><a href=\"pages\\art.html\" target=\"_parent\">Art</a></td>" +
-    "<td><a href=\"pages\\misc.html\" target=\"_parent\">Miscellaneous</a></td>";
+    "<td><a href=\"pages\\projects\\projects.html\" target=\"_parent\">Projects</a></td>" +
+    "<td><a href=\"pages\\art\\art.html\" target=\"_parent\">Art</a></td>" +
+    "<td><a href=\"pages\\misc\\misc.html\" target=\"_parent\">Miscellaneous</a></td>";
 }
 
 function addFaviconToPage() {
