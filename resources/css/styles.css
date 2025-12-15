@@ -187,3 +187,26 @@ iframe {
     border: none;
     background-color: transparent;
 }
+
+/* Details and Summary */
+details {
+    padding: 3px;
+    text-align:left;
+}
+
+summary {
+    color: #ac6687;
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+}
+
+details summary::marker,
+:is(::-webkit-details-marker) {
+    content: '\273F';
+}
+
+details[open] summary::marker,
+:is(::-webkit-details-marker) {
+    content: '\2740';
+}
