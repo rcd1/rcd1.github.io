@@ -1,355 +1,177 @@
-<!DOCTYPE html>
-<!--Ryan Davis Wrote This-->
-
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A personal website for Ryan Davis, showcasing their projects and interests.">
-    <script src="resources\javascript\randomTitles.js"></script>
-    <link rel="stylesheet" href="resources/css/index.css">
+    <meta name="description" content="Ryan Davis personal website and project showcase.">
+    <title>Ryan Davis | rcd1.github.io</title>
     <link rel="stylesheet" href="resources/css/styles.css">
-    <link rel="preload" href="resources/images/backgrounds/mystars.webp" as="image">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <script src="resources/javascript/randomTitles.js" defer></script>
 </head>
-
 <body>
-    <table class="outer_table">
-        <thead>
-            <tr id="title">
-                <th colspan="3">
-                    <h1><span id="rainbow">rcd1.github.io</span></h1>
-                </th>
-                <th colspan="2">
-                    <h1><b style="text-decoration:underline;" id="kitty">ᓚᘏᗢ</b></h1>
-                </th>
-            </tr>
-            <tr id="nav">
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Ryan Davis</p>
+                <h1><span id="rainbow">rcd1.github.io</span></h1>
+                <p class="lead">My Personal Website, home to projects, experiements, and and bit of a journal whenever I go to update something.</p>
+            </div>
+            <button id="kitty" class="kitty-button" type="button" aria-label="Click to call the cat">ᓚᘏᗢ</button>
+        </header>
 
-            </tr>
-            <tr>
-                <td colspan="5">
-                    <p>Last Updated: 15/12/2025</p>
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="headers">
-                <th>
-                    <h3>About:</h3>
-                </th>
-                <th>
-                    <h3>Info:</h3>
-                </th>
-            </tr>
-            <tr class="descriptions">
-                <th>
+        <nav id="nav" class="site-nav" aria-label="Primary navigation"></nav>
+
+        <main class="content-grid">
+            <div class="grid-two-col">
+                <section class="panel" aria-labelledby="about-heading">
+                    <h2 id="about-heading">About Me</h2>
                     <ol>
-                        <li>This is Ryan Davis's website</li>
-                        <li>Please excuse the mess, it will be getting messier</li>
-                        <li>You're gonna love it!</li>
+                        <li>I got my Bachelor's degree in Computer Science from the University of South Carolina in 2024.</li>
+                        <li>I am currently working on my Master's and should be completed around Fall 2027.</li>
+                        <li>You may not believe it yet, but Java is actually my go-to language.</li>
                         <li>By the by, you can click <a id="mody">this</a> to call my cat back</li>
                     </ol>
-                </th>
-                <th>
-                    <ol>
-                        <li style="list-style-type:'&hearts; ';">You can click the cat ^</li>
-                        <li style="list-style-type:'&spades; ';">I will be updating regularly</li>
-                        <li style="list-style-type:'&clubs; ';">You can check out the <a
-                                href="https://github.com/rcd1/rcd1.github.io" target="_blank">GitHub Repo</a> if you
-                            want</li>
-                        <li style="list-style-type:'&diams; ';">You can email me <a
-                                href="mailto:rcd1.inquiries@gmail.com?subject=Very%20Important%20Proposition"
-                                target="new_tab">[here]</a></li>
+                </section>
 
+                <section class="panel" aria-labelledby="info-heading">
+                    <h2 id="info-heading">Website Info</h2>
+                    <ol>
+                        <li style="list-style-type:'&hearts; ';">You can click the cat...</li>
+                        <li style="list-style-type:'&spades; ';">The Projects section is a great place to explore my work. Mostly small things I made for myself, but a few are class projects!</li>
+                        <li style="list-style-type:'&clubs; ';">Art and Miscellaneous are going to be a bit less professional... sorry in advance!</li>
+                        <li style="list-style-type:'&diams; ';">You can check out the <a href="https://github.com/rcd1/rcd1.github.io" target="_blank" rel="noopener noreferrer">GitHub Repo</a> if you want</li>
+                        <li style="list-style-type:'&hearts; ';">You can email me <a href="mailto:rcd1.inquiries@gmail.com?subject=Very%20Important%20Proposition" target="_blank" rel="noopener noreferrer">[here]</a></li>
                     </ol>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <h3>What's Up? <b id="face1">(●'◡'●)</b></h3>
-                </th>
-                <th>
-                    <h3>What's Next?</h3>
-                </th>
-            </tr>
-            <tr class="descriptions">
-                <th>
-                    <!-- WHAT'S UP LIST-->
+                </section>
+            </div>
+
+            <div class="grid-two-col">
+                <section class="panel" aria-labelledby="whatsup-heading">
+                    <h2 id="whatsup-heading">What's Up? <span id="face1">(●'◡'●)</span></h2>
                     <details>
-                        <summary> 15/12/2025</summary>
+                        <summary>05/05/2026</summary>
+                        <ul>
+                            <li>It has been a <i>very</i> long time, hasn't it? This semester I had been taking courses in <em>Mobile Applications Development</em> and <em>Compiler Construction</em>. One of the professors had been teaching his compiler class for a couple decades now? The tangents he would go on almost felt like he was reminiscing on simpler times. Pair that with textbooks I needed to use the <a href="https://archive.org/" target="_blank" rel="noopener noreferrer">Internet Archive</a> just to read and you get to feel more immersed in Computer Science than any bootcamp I've stabbed at in the pass. It felt like what the college experience should be.</li>
+                            <li>The mobile app class was nice too! We had used Kotlin and Jetpack Compose to build out an android application. Mine was intending to be something where you could count how many of something arbitrary you experienced during the day. Then you'd be able to look at a graph and see how it increased or decreased over time. It was just meant to <i>Keep Track</i> things like "Times you heard a bad joke today" or "number of times you had to tie your shoes", just little things that mean nothing in the grand scheme, but does pull you into paying more attention to your day-to-day. I don't really have an android device, but I liked how Kotlin wrote tbh. It felt like what Java could be if it felt like shedding some syntax.</li>
+                            <li></li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>12/15/2025</summary>
                         <ul>
                             <li>I finished out my classes last Friday, what a doozy...</li>
                             <li>I've been watching a lot of shows lately. I haven't been having as much fun with my 'puter games as I used to, I'm not sure how to feel about it.</li>
                             <li>I had a pretty good Stardew Valley streak during exam week! I'm in my first winter in-game, so I had plenty of time to upgrade my watering can.</li>
-                            <li>I think my favorite shows I have watched recently would be '<i>Spy X Family</i>', '<i>May I Ask For One Final Thing?</i>', and '<i>Gnosia</i>'. They are simply a cut above the rest.</li>
-                            <li>I set a lot of infeasible goals, get mad when I don't magically <i>lock in</i> and live happily ever after, and then chalk it up to me being a loser. I don't want to do that anymore.</li>
+                            <li>I think my favorite shows I have watched recently would be '<em>Spy X Family</em>', '<em>May I Ask For One Final Thing?</em>', and '<em>Gnosia</em>'. They are simply a cut above the rest.</li>
+                            <li>I set a lot of infeasible goals, get mad when I don't magically <em>lock in</em> and live happily ever after, and then chalk it up to me being a loser. I don't want to do that anymore.</li>
                             <li>Thanks to a new friend, I found a new HTML element called Details! I like how much they compact my lists.</li>
-                            <li>I've been cooking food recently, and it's been pretty alright! Well, except for... <i>the accident</i></li>
+                            <li>I've been cooking food recently, and it's been pretty alright! Well, except for... <em>the accident</em></li>
                             <li>During exam week, I started drinking a lot of tea instead of soda. As it turns out, too much tea can give you a stomach ache. Let's just say hot cocoa is back on the menu.</li>
-                            <li>I watched another show called '<i>Corpse Princess</i>'. Its art reminds me of anime around Cowboy Bepop's time, and the story was fun while it lasted. I would've loved to watch the rest of the story unfold, but it was cancelled back in 2009.</li>
+                            <li>I watched another show called '<em>Corpse Princess</em>'. Its art reminds me of anime around Cowboy Bepop's time, and the story was fun while it lasted. I would've loved to watch the rest of the story unfold, but it was cancelled back in 2009.</li>
                         </ul>
                     </details>
                     <details>
-                        <summary>
-                            31/08/2025
-                        </summary>
+                        <summary>08/31/2025</summary>
                         <ul>
                             <li>It's been a little while! I've mostly been getting used to being in school again.</li>
-                            <li>My and my friends have been playing Overwatch 2, and we've been having a wonderful time
-                                (though the 27 loss streak was very painful).</li>
-                            <li>I've discovered the <code>Home</code> and <code>End</code> keys on my keyboard, and
-                                combined with the <code>Ctrl + Shift + K</code> combo I can edit my programs so much
-                                faster.</li>
-                            <li>It seems my physical health has moderately improved after not eating gas station and
-                                fast food multiple times each day. Veggie Dino-nugg sweep *^____^*</li>
+                            <li>My and my friends have been playing Overwatch 2, and we've been having a wonderful time (though the 27 loss streak was very painful).</li>
+                            <li>I've discovered the <code>Home</code> and <code>End</code> keys on my keyboard, and combined with the <code>Ctrl + Shift + K</code> combo I can edit my programs so much faster.</li>
+                            <li>It seems my physical health has moderately improved after not eating gas station and fast food multiple times each day. Veggie Dino-nugg sweep *^____^*</li>
                             <li>I've discovered hummus and I've been eating it alongside every meal and snack now.</li>
-                            <li>I'm drinking a lot more diet soda. I can't remember where, something told me <quote>"the
-                                    benefit of drinking diet soda is that you aren't drinking a regular soda"</quote>.
-                            </li>
-                            <li>Haven't been leeting my code, even at school they are saying leetcode is "losing" its
-                                importance in the interview.</li>
+                            <li>I'm drinking a lot more diet soda. I can't remember where, something told me <q>the benefit of drinking diet soda is that you aren't drinking a regular soda</q>.</li>
+                            <li>Haven't been leeting my code, even at school they are saying leetcode is "losing" its importance in the interview.</li>
                             <li>I made a game! I followed a tutorial to do most of it, but I want to do more.</li>
                         </ul>
                     </details>
                     <details>
-                        <summary>
-                            17/07/2025
-                        </summary>
+                        <summary>07/17/2025</summary>
                         <ul>
-                            <li>I heard about this thing called Touch Typing, and I would like to be able to type
-                                without looking at my keyboard as well. Apparently keyboards have been designed with
-                                this in mind by placing two strips on the J and F keys. They are there so you can always
-                                find your way back to the home base, and I haven't looked at my keyboard the same way
-                                since.</li>
-                            <li>While driving at 5am to pick someone up, I stumbled upon the bands Yorushika and Kessoku
-                                Band. Holy shit they are incredible.</li>
-                            <li>I left my job last week, and while prepping for this fall I have also been doing some
-                                light searching on the usual suspects. I'm just going to grab something at the
-                                university and call it a day.</li>
-                            <li>I have switched to diet soft drinks recently, and I have also been trying to drink as
-                                many water bottles as I can in a day. I have found that a pack of 32 16.9 oz bottles is
-                                like 5 bucks. Granted I could just drink tap, but it tastes a little funny and our ice
-                                also tastes a little funny and I like just drinking cold water and not crunching on the
-                                big ice because it can be really cold and not fun to crunch unless it's in the tiny
-                                crunchable size.</li>
-                            <li>I found some dino nuggets at the Publix that boast a whooping 1/4 cup of vegetables in
-                                every serving of 4 nuggets. They were very tasty and I will be getting more and I will
-                                be looking into other frozen foods that hide veggies inside, they may be the meta.</li>
-                            <li>The desire to be held grows stronger every day, just the thought of being pampered is
-                                making me dizzy.</li>
-                            <li>Deltarune released, but as much as Undertale and Chapter 1 shaped my high school
-                                experience, I just can't find any desire to play the rest of the game. I do not think it
-                                is a bad game, it's just I grew up in the vibrant world of Undertale AUs, <a
-                                    href="https://youtu.be/BCzDrlnOYY0?si=Xt5xYHHP7DpuikKm">GlitchTale</a> being my
-                                favorite. I guess I had my Toby Fox game that I hyperfixated on (and eventually grew
-                                past), I just don't know if Deltarune will spark the same renaissance I got to
-                                experience. That one Asgore gif is brilliant though.</li>
-                            <li>I have found that I absolutely despise most react and gameplay content on YouTube. I
-                                just no longer care for the creator's experience with a piece of media, I want to
-                                experience these things for myself now that I have the means to do so.</li>
-                            <li>I'm still making progress on LeetCode, and I've been jumping around on freeCodeCamp. I
-                                want to jump ahead to their Front End Libraries section (the part I want/need more
-                                experience with), but I should complete the sections before it first (HTML, CSS,
-                                JavaScript). I just don't think I'm ready for the 1200 steps of CSS they have.</li>
-                            <li>I watched a streamer play a gacha game called <em>Uma Musume: Pretty Derby</em>, and I
-                                now have an interest in both learning Japanese and running. I haven't been on Duolingo
-                                for years now, and that bird let me have it when I logged back in. I have things set up
-                                to start running at the gym, just waiting on confirmation.</li>
-                            <li>While scrolling though Reddit, I found a tome in the <a
-                                    href="https://www.reddit.com/r/wizardposting/">r/wizardposting</a> library with a
-                                predefined runeset for basic spells. I'll be using these once I find the time to collect
-                                the resources I will need. I'm planning a making a bangle first.</li>
-                            <li>I was able to beat the Luminae Challenges! Challenge 3 was a nightmare, the others
-                                couldn't compare.</li>
+                            <li>I heard about this thing called Touch Typing, and I would like to be able to type without looking at my keyboard as well. Apparently keyboards have been designed with this in mind by placing two strips on the J and F keys. They are there so you can always find your way back to the home base, and I haven't looked at my keyboard the same way since.</li>
+                            <li>While driving at 5am to pick someone up, I stumbled upon the bands Yorushika and Kessoku Band. Holy shit they are incredible.</li>
+                            <li>I left my job last week, and while prepping for this fall I have also been doing some light searching on the usual suspects. I'm just going to grab something at the university and call it a day.</li>
+                            <li>I have switched to diet soft drinks recently, and I have also been trying to drink as many water bottles as I can in a day. I have found that a pack of 32 16.9 oz bottles is like 5 bucks. Granted I could just drink tap, but it tastes a little funny and our ice also tastes a little funny and I like just drinking cold water and not crunching on the big ice because it can be really cold and not fun to crunch unless it's in the tiny crunchable size.</li>
+                            <li>I found some dino nuggets at the Publix that boast a whooping 1/4 cup of vegetables in every serving of 4 nuggets. They were very tasty and I will be getting more and I will be looking into other frozen foods that hide veggies inside, they may be the meta.</li>
+                            <li>The desire to be held grows stronger every day, just the thought of being pampered is making me dizzy.</li>
+                            <li>Deltarune released, but as much as Undertale and Chapter 1 shaped my high school experience, I just can't find any desire to play the rest of the game. I do not think it is a bad game, it's just I grew up in the vibrant world of Undertale AUs, <a href="https://youtu.be/BCzDrlnOYY0?si=Xt5xYHHP7DpuikKm">GlitchTale</a> being my favorite. I guess I had my Toby Fox game that I hyperfixated on (and eventually grew past), I just don't know if Deltarune will spark the same renaissance I got to experience. That one Asgore gif is brilliant though.</li>
+                            <li>I have found that I absolutely despise most react and gameplay content on YouTube. I just no longer care for the creator's experience with a piece of media, I want to experience these things for myself now that I have the means to do so.</li>
+                            <li>I'm still making progress on LeetCode, and I've been jumping around on freeCodeCamp. I want to jump ahead to their Front End Libraries section (the part I want/need more experience with), but I should complete the sections before it first (HTML, CSS, JavaScript). I just don't think I'm ready for the 1200 steps of CSS they have.</li>
+                            <li>I watched a streamer play a gacha game called <em>Uma Musume: Pretty Derby</em>, and I now have an interest in both learning Japanese and running. I haven't been on Duolingo for years now, and that bird let me have it when I logged back in. I have things set up to start running at the gym, just waiting on confirmation.</li>
+                            <li>While scrolling though Reddit, I found a tome in the <a href="https://www.reddit.com/r/wizardposting/">r/wizardposting</a> library with a predefined runeset for basic spells. I'll be using these once I find the time to collect the resources I will need. I'm planning a making a bangle first.</li>
+                            <li>I was able to beat the Luminae Challenges! Challenge 3 was a nightmare, the others couldn't compare.</li>
                         </ul>
                     </details>
+                </section>
+
+                <section class="panel" aria-labelledby="whatsnext-heading">
+                    <h2 id="whatsnext-heading">What's Next?</h2>
                     <details>
-                        <summary>
-                            12/07/2025
-                        </summary>
-                        <ul>
-                            <li>I watched Dandadan today. I can't get those opening themes out of my head, so I'm
-                                veryexcited for the next season</li>
-                            <li>I have been sitting outside a little bit every day, it would be pretty nice if it wasn't
-                                90+ and humid. I keep hoping the next day will be cooler, one day it will be, I'm sure.
-                            </li>
-                            <li>I have been wanting to bite something and/or someone quite often recently. My heart and
-                                my mouth are growing restless.</li>
-                            <li>I have "started" toying with a sigillic language for magic circles. It's very early on
-                                inthe process, but I have created a few sigils at least. I've been working with a 3x3
-                                grid andtrying to keep them at 3 connected strokes max per sigil. This way they take up
-                                at most 4 ofthe 9 dots in their grid. I'm thinking then the other five points could be
-                                modifiers thatcould be applied to the sigil. It could be neat to make a full alphabet to
-                                writeincantations in full sentences rather than the sum of elemental sigils and their
-                                effects,I do like both styles though. The only limit at this point is my motivation.
-                            </li>
-                            <li>I was playing my Calamity world, and I beat Moon Lord! As it turns out, I also have
-                                Fargo'sSoul and Mutant mods, so I had spent a very long time crafting the Enchantments
-                                and theirForces. I was not happy to see my hard work reduced to nothing by the Champion
-                                Bosses thatjust happen to drop the very same enchantments I spent literal HOURS trying
-                                to create. Doyou know how long it took to get that lightning bug for the Hallowed? 5
-                                HOURS. I HAD TO WAITFOR A NEW MOON AND HOPE THERE WAS ENOUGH WINDY HALLOWED GRASS FOR
-                                THAT BUG TO SPAWN. For anunrelated reason, I don't think I will be continuing my
-                                Calamity playthrough.</li>
-                            <li>I did a LeetCode problem on that day I said I would try one, and now I'm up to doing
-                                acouple each day! I'm trying out their 30 Day JavaScript, 50 Programming Skills, and
-                                75Interview Questions. I'm trying to do 1 problem per each day, and it's been fun
-                                relearningCSharp, actually learning JavaScript, and trying to solve these problems on my
-                                own. I havegotten some nifty solutions on my own, but I'm amazed at what other people
-                                create to.</li>
-                            <li> I've been on E and Spiro for about 5 months now. With them, I have felt comfortable
-                                enoughto stop existing on autopilot. This has come with its own challenges: namely I had
-                                gottenusedto shutting down in stressful situations. I have been trying to work through
-                                those momentsinstead of ignoring them, and needless to say, they hurt. But I won't
-                                improve if can'thandle this, so it's one step at a time.</li>
-                            <li>Youtube gave me another banger called <a
-                                    href="https://youtu.be/PysVvOp0jiU?si=Bx0jDljCgTHz5WEQ">Ghost Avenue</a> by an
-                                artistcalled Eve. Incredible music video on its own, but I've never seen captions move
-                                like theydid here. Sadly though, Microsoft Edge can't handle all the effects Eve hadin
-                                mind, so Firefox might be in my future if I am willing to log back into my emails.</li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>
-                            04/07/2025
-                        </summary>
-                        <ul>
-                            <li>I'm getting ready to start my CS Master's this fall</li>
-                            <li>I've been running through FreeCodeCamp (I want to make this site cooler)</li>
-                            <li>I <i>was</i> playing Terraria Calamity, but I tried rushing Moonlord after Golem (not
-                                smart)
-                            </li>
-                            <li>I watched Mushoku Tensei. I have never felt a stronger desire to get off my computer and
-                                gotouch grass, travel the world, join the Adventurer's Guild and make a name for myself.
-                            </li>
-                            <li>You can imagine my despair when there were no Guilds here that would let me walk in,
-                                apply,and start working that day.
-                            <li>You can continue to imagine the pain of no wandering mages/warriors/adventurers to take
-                                myunder their tutelage, and no 1to1 equivalent to magic here that I could obsess over
-                            </li>
-                            <li>I mean, in essence their system is sequential code executed by lossless transmutation.
-                            </li>
-                            <li>But, it simply hasn't been proven that there is a renewable resource within ourselves
-                                thatwe
-                                can convert into the "primitive" elements</li>
-                            <li>I've found out that Publix has Popcorn Chicken, and different Publixes (Publi?)
-                                havedifferent flavors they serve.</li>
-                            <li>I tried reading a couple days ago, and it was pretty nice. The last book I read was in
-                                2020,It's called <a
-                                    href="https://www.amazon.com/Shapeshifters-Kieshara-Den-Shadows/dp/0385739508">TheShapeshifters</a>
-                                by Amelia Atwater-Rhodes</a></li>
-                            <li>I watched a youtube documentary about the Horse Race Tests, I just feel like we all
-                                coulduse
-                                a little more doomed yuri in our lives.</li>
-                        </ul>
-                    </details>
-                </th>
-                <th>
-                <!-- WHAT'S NEXT LIST-->
-                    <details>
-                        <summary> 15/12/2025</summary>
+                        <summary>12/15/2025</summary>
                         <ul>
                             <li>No promises, no expectations. I'm just gonna do.</li>
                         </ul>
-                    </details>    
+                    </details>
                     <details>
-                        <summary>
-                            31/08/2025
-                        </summary>
+                        <summary>08/31/2025</summary>
                         <ul>
-                            <li>I'm suffering from rapid onset stupidity and my only treatment is locking in for this
-                                semester.</li>
-                            <li>I found this code 20 Games challenge online and I'm going to complete it. First Game:
-                                Pong
-                            </li>
+                            <li>I'm suffering from rapid onset stupidity and my only treatment is locking in for this semester.</li>
+                            <li>I found this code 20 Games challenge online and I'm going to complete it. First Game: Pong</li>
                             <li>There is a game fest in October that I will be participating in.</li>
                             <li>I'm going to meet with a mentor to help me route my career</li>
-                            <li>I really don't have an interest in research, but... I could at least check out a
-                                workshop,
-                                right?</li>
-                            <li>I'm gonna muck around with Blender and Godot again (Unity is just so bloated nowadays)
-                            </li>
+                            <li>I really don't have an interest in research, but... I could at least check out a workshop, right?</li>
+                            <li>I'm gonna muck around with Blender and Godot again (Unity is just so bloated nowadays)</li>
                             <li>I've gotta hit my duolingo every day</li>
                         </ul>
                     </details>
                     <details>
-                        <summary>
-                            17/07/2025
-                        </summary>
+                        <summary>07/17/2025</summary>
                         <ul>
-                            <li>I want to be able to run. It just seems so freeing to be able to move quickly without
-                                heaving and huffing.</li>
-                            <li>Duolingo has me ordering food right now, I would like to be able to write what I'm being
-                                taught to say, but that's not until the next unit it seems.</li>
-                            <li>I hsve been able to train a couple B rank umamusume so far, I'm mostly focusing on
-                                getting
-                                more SP for my SSRs (I spent it all on R ranks like an idiot).</li>
+                            <li>I want to be able to run. It just seems so freeing to be able to move quickly without heaving and huffing.</li>
+                            <li>Duolingo has me ordering food right now, I would like to be able to write what I'm being taught to say, but that's not until the next unit it seems.</li>
+                            <li>I hsve been able to train a couple B rank umamusume so far, I'm mostly focusing on getting more SP for my SSRs (I spent it all on R ranks like an idiot).</li>
                         </ul>
                     </details>
                     <details>
-                        <summary>
-                            12/07/2025
-                        </summary>
+                        <summary>07/12/2025</summary>
                         <ul>
                             <li>I'm going to keep working on my LeetCode and FCC.</li>
                             <li>I will be scouring Youtube in hopes for more bangers</li>
-                            <li>I really need to look at the C++ program again. I know it's meant to be an example of a
-                                Turing machine, and it did work once upon a time.</li>
-                            <li>I do want some more popcorn chicken, but I also found these really crunchy crackers the
-                                make
-                                my brain happy when i crunch and crunch and crunch and so i might get some more. Though
-                                I
-                                have been craving some crispy and juicy steak. </li>
+                            <li>I really need to look at the C++ program again. I know it's meant to be an example of a Turing machine, and it did work once upon a time.</li>
+                            <li>I do want some more popcorn chicken, but I also found these really crunchy crackers the make my brain happy when i crunch and crunch and so i might get some more. Though I have been craving some crispy and juicy steak.</li>
                             <li>If I want some more backgrounds, I will need to revisit Blender, my beloved.</li>
-                            <li>I think eventually I want a separate page for our talks here, but like... I can just
-                                write
-                                them here... so it is not a high priority.</li>
-                            <li>It has been recommended that I start working on a project during my studies, and I have
-                                several ideas, but at the center of them all is adding more to this website.</li>
-                            <li>I'm going to use Godot I swear. I really want to I just haven't had a gameplay mechanic
-                                I
-                                want to explore yet.</li>
-                            <li>I've been playing Mecha Break with my friends, and I'm trying to complete the Luminae
-                                Challenges, but I can't even get past #3. IT SUCKS, BUT I WANNA FINISH IT</li>
+                            <li>I think eventually I want a separate page for our talks here, but like... I can just write them here... so it is not a high priority.</li>
+                            <li>I'm going to use Godot I swear. I really want to I just haven't had a gameplay mechanic I want to explore yet.</li>
+                            <li>I've been playing Mecha Break with my friends, and I'm trying to complete the Luminae Challenges, but I can't even get past #3. IT SUCKS, BUT I WANNA FINISH IT</li>
                         </ul>
                     </details>
                     <details>
-                        <summary>
-                            04/07/2025
-                        </summary>
-                        <li>I'm probably going to fight Duke Fishron before I go through the pillars again, notsoon
-                            though.</li>
-                        <li>I've almost finished Basic Html with FCC, so onto basic CSS</li>
-                        <li>I am going to try a single LeetCode tomorrow, and I won't cry if I'm in the bottom 80%
-                            instorage</li>
-                        <li>I'm curious about Godot, and I found a <a
-                                href="https://gdquest.github.io/learn-gdscript/?ref=godot-docs">website</a> that
-                            willteach me</li>
-                        <li>I've been wanting to create heirloom(s) that I could pass down for generations.</li>
-                        <li>I'm probably going to continue obsessing over the magic system of another world.
-                            (perhapsdevelop my own to 'enchant' my heirlooms with)</li>
-                        <li>I noticed that I have a C++ program in here that I tried to make an .exe, but I don't
-                            thinkit has a page, or works anymore</li>
-                        <li>I've been listening to <a
-                                href="https://youtu.be/0iVlSNpq8i8?si=Q4vBjTEn8bcfwCYn">Birdbrain</a> by Jamie P
-                            onrepeat the past couple of days, I'll probably keep listening to it until I hate it.</li>
-                        <li>I want some popcorn chicken. I'm gonna get some tomorrow.</li>
-                        <li>I want a page for my thoughts, I've noticed writing things down keeps them from bouncing
-                            inmy head for weeks.</li>
-                        <li>I'm going to try taking Meletonin tonight, it should fine</li>
+                        <summary>07/04/2025</summary>
+                        <ul>
+                            <li>I'm probably going to fight Duke Fishron before I go through the pillars again, not soon though.</li>
+                            <li>I've almost finished Basic Html with FCC, so onto basic CSS</li>
+                            <li>I am going to try a single LeetCode tomorrow, and I won't cry if I'm in the bottom 80% in storage</li>
+                            <li>I'm curious about Godot, and I found a <a href="https://gdquest.github.io/learn-gdscript/?ref=godot-docs">website</a> that will teach me</li>
+                            <li>I've been wanting to create heirloom(s) that I could pass down for generations.</li>
+                            <li>I'm probably going to continue obsessing over the magic system of another world. (perhaps develop my own to 'enchant' my heirlooms with)</li>
+                            <li>I noticed that I have a C++ program in here that I tried to make an .exe, but I don't think it has a page, or works anymore</li>
+                            <li>I've been listening to <a href="https://youtu.be/0iVlSNpq8i8?si=Q4vBjTEn8bcfwCYn">Birdbrain</a> by Jamie P on repeat the past couple of days, I'll probably keep listening to it until I hate it.</li>
+                            <li>I want some popcorn chicken. I'm gonna get some tomorrow.</li>
+                            <li>I want a page for my thoughts, I've noticed writing things down keeps them from bouncing in my head for weeks.</li>
+                            <li>I'm going to try taking Meletonin tonight, it should fine</li>
+                        </ul>
                     </details>
-                </th>
-            </tr>
-        </tbody>
-        <tfoot>
+                </section>
+            </div>
+        </main>
 
-        </tfoot>
-    </table>
+        <footer class="page-footer">
+            <p>Last Updated: 05/05/2026</p>
+        </footer>
+    </div>
+
+    <script src="resources/javascript/catCount.js" defer></script>
+    <script src="resources/javascript/rainbow.js" defer></script>
+    <script src="resources/javascript/faceChange.js" defer></script>
+    <script src="resources/javascript/addNav.js" defer></script>
 </body>
-<script src="resources/javascript/catCount.js"></script>
-<script src="resources/javascript/rainbow.js"></script>
-<script src="resources/javascript/faceChange.js"></script>
-<script src="resources/javascript/addNav.js"></script>
-
 </html>
