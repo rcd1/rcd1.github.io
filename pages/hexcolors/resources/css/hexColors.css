@@ -1,84 +1,140 @@
-/*  Base Styles  */
 body {
-    background-color:#2f345b;
-    color: #cdd7cc;
-    font-size: larger;
-    height: 100vh;
-    width: 100vw;
+    background: linear-gradient(135deg, #0a0612 0%, #1a1025 100%);
 }
 
-/*  Table Styles  */
-table {
-    background-color: #7f7bb8;
-    border: medium solid black;
-    width: 80vh;
-    height: 50vh;
-    margin: 20vh auto;
-    padding: 2vw;
-}
-tr th {
-    color: #1f222b;
-    padding: 10px; 
+.color-generator {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
 }
 
-th:hover {
-    color:#cdd7cc;
+.color-generator h2 {
+    margin: 0 0 1.5rem;
+    color: var(--muted);
+    font-size: 1.45rem;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.color-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.color-display {
+    width: 100%;
+    aspect-ratio: 1;
+    border: 2px solid var(--border);
+    border-radius: calc(var(--radius) - 0.25rem);
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-td {
-    color: #1f222b;
-    font-size: larger;
-    padding: 10px;
-    text-align: center;
+.color-display:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border-color: var(--accent);
 }
 
-/*  Box Styles  */
-div {
-    border: medium solid black;
-}
-
-div:hover {
+.color-code {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(179, 132, 199, 0.3);
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: var(--accent);
     cursor: pointer;
-    border:medium solid #cdd7cc;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    user-select: all;
 }
 
-td div {
-    height: 20vh;
-    width: 20vh;
-    text-align: center;
+.color-code:hover {
+    background: rgba(179, 132, 199, 0.1);
+    border-color: var(--accent);
+    transform: translateY(-2px);
 }
 
-/* Individual Box Colors */
-#box1 {
-    background-color:#E08CD9;
-}
-#box2 {
-    background-color:#2EEA1A;
-}
-#box3 {
-    background-color:#AA6686;
-}
-#box4 {
-    background-color:#B84D4D;
+.color-code.copied {
+    background: rgba(179, 132, 199, 0.25);
+    border-color: var(--accent);
+    color: #fff;
 }
 
-/*  Button Styles  */
-button {
-    background-color: #83688f;
-    color: #1f222b;
-    font-size: large;
-    height: 8vh;
-    padding: 1vw;
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
-
-button:hover {
-    cursor:pointer;
-    color:#cdd7cc;
+.generate-button {
+    background: var(--border);
+    color: #080310;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/*  Paragraph Styles  */
-p {
-    text-align:center;
+.generate-button:hover,
+.generate-button:focus-visible {
+    background: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(179, 132, 199, 0.3);
+    outline: none;
+}
+
+.generate-button:active {
+    transform: translateY(-1px);
+}
+
+.instructions {
+    background: rgba(179, 132, 199, 0.08);
+    border-left: 3px solid var(--border);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.instructions p {
+    margin: 0.5rem 0;
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.instructions p:first-child {
+    margin-top: 0;
+}
+
+.instructions p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+    .color-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .color-generator {
+        padding: 1rem;
+    }
+
+    .generate-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+    }
 }

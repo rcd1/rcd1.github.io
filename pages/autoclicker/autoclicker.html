@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <!--Ryan Davis Wrote This-->
+<html lang="en">
 <head>
-    <title>The Funny Click Thing</title>
     <meta charset="UTF-8">
-    <script src="/resources/scripts/randomTitles.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Python Autoclicker - A simple tool for automating clicks.">
+    <title>Autoclicker | rcd1.github.io</title>
+    <link rel="stylesheet" href="/resources/css/styles.css">
     <link rel="stylesheet" href="resources/css/autoclicker.css">
+    <script src="/resources/javascript/randomTitles.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <h1>My Autoclicker</h1>
-    </header>
-    <main>
-        <section class="assignments">
-            <article class="assignment">
-                    <h2>Downloading and Using</h2>    
-                <a href="resources/files/clicker.exe" download>
-                    <img src="resources/images/introspection.jpg">
-                </a>
-                <p>Clicking the Image will give you an Executable.</p>
-                <ul>
-                    <li>Enjoy!</li>
-                </ul>
-            </article>
-        </section>
-    </main>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Tool</p>
+                <h1>Autoclicker</h1>
+                <p class="lead">A simple Python-based autoclicker tool for automating repetitive clicking tasks.</p>
+            </div>
+        </header>
 
+        <nav id="nav" class="site-nav" aria-label="Primary navigation"></nav>
+
+        <main>
+            <section class="download-section" aria-labelledby="download-heading">
+                <h2 id="download-heading">Download the Executable</h2>
+                
+                <article class="download-card">
+                    <a href="resources/files/clicker.exe" download class="download-link">
+                        <img src="resources/images/introspection.jpg" alt="Autoclicker icon">
+                        <h3>clicker.exe</h3>
+                        <p>Click to download the executable</p>
+                    </a>
+                </article>
+
+                <div class="info-box">
+                    <h3>About This Tool</h3>
+                    <ul>
+                        <li>Simple and easy to use</li>
+                        <li>Written in Python</li>
+                        <li>Perfect for automating repetitive clicking tasks</li>
+                        <li>Great for testing or just having fun</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>Last Updated: 05/06/2026</p>
+        </footer>
+    </div>
+
+    <script src="/resources/javascript/addNav.js" defer></script>
 </body>
-
 </html>

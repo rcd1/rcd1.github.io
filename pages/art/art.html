@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <!--Ryan Davis Wrote This, I'm sure of it-->
-
+<html lang="en">
 <head>
-    <title>Welcome to my page! o/</title>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/resources/javascript/randomTitles.js"></script>
+    <meta name="description" content="Art gallery by Ryan Davis, featuring digital artwork and illustrations.">
+    <title>Art | rcd1.github.io</title>
     <link rel="stylesheet" href="/resources/css/styles.css">
-    <link rel="preload" href="/resources/images/backgrounds/stars4.webp" as="image">
+    <script src="/resources/javascript/randomTitles.js" defer></script>
     <style>
         body {
             background-image: url("/resources/images/backgrounds/stars4.webp");
             background-size: cover;
-        }
-
-        img {
-            height:50vh;
-            width: auto
+            background-position: center;
+            background-repeat: no-repeat;
         }
     </style>
-
 </head>
-
 <body>
-    <table class="outer_table">
-        <thead>
-            <tr>
-                <th colspan="4">
-                    <h1>The Art Corner</h1>
-                </th>
-            </tr>
-            <tr id="nav">
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Art</p>
+                <h1>The Art Corner</h1>
+                <p class="lead">A collection of my digital artwork and illustrations.</p>
+            </div>
+        </header>
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>
-                    
-                    <a href="resources/images/lighthouse_s23.png" target="new_tab" download>
-                        <img src="resources/images/lighthouse_s23.webp">
-                    </a>
-                    <a href="resources/images/minecraft_f24.png" target="new_tab" download>
-                        <img src="resources/images/minecraft_f24.webp">
-                    </a>
-                    <a href="resources/images/webfishing.jpg" target="new_tab" download>
-                        <img src="resources/images/webfishing.webp">
-                    </a>
-                    
-                    
-                    
-                </th>
-            </tr>
-        </tbody>
-        <tfoot>
-        </tfoot>
-    </table>
+        <nav id="nav" class="site-nav" aria-label="Primary navigation"></nav>
 
+        <main>
+            <section class="gallery" aria-labelledby="gallery-heading">
+                <h2 id="gallery-heading">Gallery</h2>
+                <div class="gallery-grid">
+                    <a href="resources/images/lighthouse_s23.png" target="_blank" rel="noopener noreferrer" download>
+                        <img src="resources/images/lighthouse_s23.webp" alt="Lighthouse artwork">
+                    </a>
+                    <a href="resources/images/minecraft_f24.png" target="_blank" rel="noopener noreferrer" download>
+                        <img src="resources/images/minecraft_f24.webp" alt="Minecraft artwork">
+                    </a>
+                    <a href="resources/images/webfishing.jpg" target="_blank" rel="noopener noreferrer" download>
+                        <img src="resources/images/webfishing.webp" alt="Webfishing artwork">
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>Last Updated: 05/06/2025</p>
+        </footer>
+    </div>
+
+    <script src="/resources/javascript/addNav.js" defer></script>
 </body>
-<script src="/resources/javascript/addNav.js"></script>
-
 </html>

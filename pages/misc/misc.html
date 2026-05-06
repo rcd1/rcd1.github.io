@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <!--Ryan Davis Wrote This-->
-
+<html lang="en">
 <head>
-    <title>Welcome to my page! o/</title>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/resources/javascript/randomTitles.js"></script>
+    <meta name="description" content="Miscellaneous content and experiments by Ryan Davis.">
+    <title>Miscellaneous | rcd1.github.io</title>
     <link rel="stylesheet" href="/resources/css/styles.css">
-    <link rel="preload" href="/resources/images/backgrounds/mystars.webp" as="image">
-    <style>
-        body {
-            background-image: url(/resources/images/backgrounds/mystars.webp);
-            background-size: cover;
-        }
-    </style>
-
+    <link rel="stylesheet" href="/resources/css/index.css">
+    <script src="/resources/javascript/randomTitles.js" defer></script>
 </head>
-
 <body>
-    <table class="outer_table">
-        <thead>
-            <tr>
-                <th colspan="4">
-                    <h1>Miscellaneous</h1>
-                </th>
-            </tr>
-            <tr id="nav">
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Miscellaneous</p>
+                <h1>It's... Empty.</h1>
+                <p class="lead">Where the not-so-technical resides.</p>
+            </div>
+        </header>
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th colspan="2">
-                    <h3>Some Things</h3>
-                </th>
-            </tr>
-            <tr>
-                <th><p>I had some thoughts on the first 2 seasons of Mushoku Tensei. If you want to read them, you <a
-                        href="resources/files/Tensei.txt" target="_blank">can</a>.</p></th>
-                <th><p>I tried playing a <a href="resources/files/shlundertale.mid" download>song</a> from memory. I couldn't figure out one part of it though, so it'll sound <em>off</em></p></th>
-            </tr>
-            <tr>
-                <th>
-                    <p>I've been messing around with a music editor called <a href="https://yurisizov.itch.io/boscaceoil-blue">Boscaceoil-Blue</a>, and I even made a couple of tunes!
-                    </p>
-                </th>
-                <th><ul>
-                    <li><audio controls>
-                            <source src="resources/songs/intro_to_song.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio></li>
-                    <li><audio controls>
-                            <source src="resources/songs/under_my_snail.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio></li>
-                </ul></th>
-            </tr>
-        </tbody>
-        <tfoot>
-        </tfoot>
-    </table>
+        <nav id="nav" class="site-nav" aria-label="Primary navigation"></nav>
 
+        <main>
+            <section class="panel" aria-labelledby="misc-heading">
+                <h2 id="misc-heading">Coming Soon</h2>
+                <p>This page is under construction. Check back later for more miscellaneous content!</p>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>Last Updated: 05/06/2025</p>
+        </footer>
+    </div>
+
+    <script src="/resources/javascript/addNav.js" defer></script>
 </body>
-<script src="/resources/javascript/addNav.js"></script>
-
 </html>

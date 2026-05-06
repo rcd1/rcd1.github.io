@@ -107,9 +107,15 @@ function randomTitle() {
         "Hive Approaching! Bring a Sword",
         "Bank and you'll summon a Primevil!",
         "Guardian, we stand on the precipice of a war with the cabal",
-        "You can now play as *^____^* Luigi",
+        "You can now play as Luigi",
         "I, Gammon, will save us",
-        "and I'm all out of gum"
+        "and I'm all out of gum",
+        "I can't count past 5 anymore with being reminded.",
+        "I too am in this episode.",
+        "How many licks does it take to get to the center of a toosie pop?",
+        "They don't even have dental...",
+        "Fate spins along, as it should.",
+        "Would you rather have 1 dollar or 2 dollars?",
     ];
     document.title = titles[Math.floor(Math.random() * titles.length)]
 

@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Image to WebP Converter</title>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/resources/javascript/randomTitles.js"></script>
+    <meta name="description" content="Convert images to WebP format online.">
+    <title>Image to WebP Converter | rcd1.github.io</title>
     <link rel="stylesheet" href="/resources/css/styles.css">
-    <link rel=stylesheet href="resources/css/imageToWebp.css">
-    <link rel="preload" href="/resources/images/backgrounds/mystars.webp" as="image">
+    <link rel="stylesheet" href="resources/css/imageToWebp.css">
+    <script src="/resources/javascript/randomTitles.js" defer></script>
     <style>
         body {
             background-image: url(/resources/images/backgrounds/mystars.webp);
             background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
-
 <body>
-    <table class="outer_table">
-        <thead>
-            <tr>
-                <th colspan="4">
-                    <h1>An Image Converter!</h1>
-                </th>
-            </tr>
-            <tr id="nav">
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Tool</p>
+                <h1>Image to WebP Converter</h1>
+                <p class="lead">Convert your images to WebP format for better compression and web performance.</p>
+            </div>
+        </header>
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th id="drop-area">
+        <nav id="nav" class="site-nav" aria-label="Primary navigation"></nav>
 
+        <main>
+            <section class="converter-panel" aria-labelledby="converter-heading">
+                <h2 id="converter-heading">Convert Your Image</h2>
+                
+                <div id="drop-area" class="drop-zone">
                     <p>Drag & drop an image here</p>
                     <input type="file" id="fileElem" accept="image/*" style="display:none">
-                    <button onclick="fileElem.click()">Or select a file</button>
+                    <button class="file-button">Or select a file</button>
+                </div>
 
-                </th>
-            </tr>
-            <tr>
-                <th id="output">
+                <div id="output" class="output-area">
                     <p>Your Converted Image Will Show Up Here</p>
-                </th>
-            </tr>
-        </tbody>
-        <tfoot>
-        </tfoot>
-    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>Last Updated: 05/06/2026</p>
+        </footer>
+    </div>
+    <script src="resources/javascript/imageToWebp.js" defer></script>
+    <script src="/resources/javascript/addNav.js" defer></script>
 </body>
-<script src="/resources/javascript/imageToWebp.js"></script>
-<script src="/resources/javascript/addNav.js"></script>
-
-
 </html>

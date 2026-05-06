@@ -1,121 +1,109 @@
 <!DOCTYPE html>
 <!--Ryan Davis Wrote This-->
-
+<html lang="en">
 <head>
-    <title>Take a look at CourseWorks!</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CourseWorks: Software Development Final Project - Mock Degree Auditor">
+    <title>CourseWorks | rcd1.github.io</title>
     <link rel="stylesheet" href="/resources/css/styles.css">
     <link rel="stylesheet" href="resources/css/msjn.css">
-    <link rel="preload" href="/resources/images/backgrounds/stars4.webp" as="image">
-    <script src="/resources/javascript/randomTitles.js"></script>
+    <script src="/resources/javascript/randomTitles.js" defer></script>
     <style>
         body {
             background-image: url(/resources/images/backgrounds/stars4.webp);
             background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
-
 <body>
-    <table class="outer_table">
-        <thead>
-            <tr>
-                <th colspan="4">
-                    <h1>CourseWorks: Some Highlights of Development</h1>
-                </th>
-            </tr>
-            <tr id="nav">
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Project</p>
+                <h1>CourseWorks</h1>
+                <p class="lead">Software Development Final Project: A Mock Degree Auditor System</p>
+            </div>
+        </header>
 
-            </tr>
-            <tr>
-                <th colspan="4">
-                    Look at the <a href="https://github.com/rcd1/MSJN" target="new_tab">First Sprint</a> and the <a
-                        href="https://github.com/rcd1/MSJN_Sprint_2" target="new_tab">Second Sprint</a> Repos
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th class="assignment">
-                    <a href="https://docs.google.com/document/d/1lE0VJvlagfrX_IuEQvEDl5w8_wsePGufgg52tUMEMAg/edit?usp=sharing"
-                        target="new_tab">
-                        <h3>Software Requirements</h3>
-                    </a>
-                    <a href="https://docs.google.com/document/d/1lE0VJvlagfrX_IuEQvEDl5w8_wsePGufgg52tUMEMAg/edit?usp=sharing"
-                        target="new_tab">
-                        <img src="resources/images/software_req.jpg">
-                    </a>
-                    <p>Here we conducted introductory research on degree auditing software, potential consumers,
-                        potential obstacles for our development, etc.</p>
-                </th>
-                <th class="assignment">
-                    <a href="https://docs.google.com/document/d/1YrflCgTXKnXctKVN0BP4xAsHggMdlEQaijx5MlEGXt4/edit?usp=sharing"
-                        target="new_tab">
-                        <h3>Design Document</h3>
-                    </a>
-                    <a href="https://docs.google.com/document/d/1YrflCgTXKnXctKVN0BP4xAsHggMdlEQaijx5MlEGXt4/edit?usp=sharing"
-                        target="new_tab">
-                        <img src="resources/images/design_doc.jpg">
-                    </a>
-                    <p>Here we plotted out our future implementation.</p>
+        <nav id="nav" class="site-nav" aria-label="Primary navigation"></nav>
 
-                </th>
-                <th class="assignment">
-                    <a href="resources/files/UML Diagram.pdf" target="new_tab">
-                        <h3>UML Diagram</h3>
-                    </a>
-                    <a href="resources/files/UML Diagram.pdf" target="new_tab">
-                        <img src="resources/images/uml_diagram.jpg">
-                    </a>
-                    <p>Just before our first coding sprints, we created the almighty <b>UML Diagram</b></p>
+        <main>
+            <section class="project-links" aria-labelledby="repos-heading">
+                <h2 id="repos-heading">Project Repositories</h2>
+                <p>View the code and development on GitHub:</p>
+                <ul>
+                    <li><a href="https://github.com/rcd1/MSJN" target="_blank" rel="noopener noreferrer">First Sprint Repository</a></li>
+                    <li><a href="https://github.com/rcd1/MSJN_Sprint_2" target="_blank" rel="noopener noreferrer">Second Sprint Repository</a></li>
+                </ul>
+            </section>
 
-                </th>
-            </tr>
-            <tr>
-                <th class="assignment">
-                    <a href="https://youtu.be/Gpv9mRMa-eU?si=dgM0ZvMc2cjtF8QZ">
-                        <h3>First Sprint</h3>
-                    </a>
-                    <iframe width="200" height="200" src="https://www.youtube.com/embed/Gpv9mRMa-eU?si=l4NpBwBWqwDG-zs_"
-                        title="First Sprint Youtube" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p>For the first sprint, the goal was to implement as much of the high priority requirements so we
-                        could
-                        have a functional application.</p>
+            <section class="deliverables" aria-labelledby="deliverables-heading">
+                <h2 id="deliverables-heading">Development Highlights</h2>
+                
+                <div class="deliverable-grid">
+                    <article class="deliverable-card">
+                        <a href="https://docs.google.com/document/d/1lE0VJvlagfrX_IuEQvEDl5w8_wsePGufgg52tUMEMAg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <img src="resources/images/software_req.jpg" alt="Software Requirements document">
+                            <h3>Software Requirements</h3>
+                        </a>
+                        <p>Introductory research on degree auditing software, potential consumers, and development obstacles.</p>
+                    </article>
 
-                </th>
-                <th class="assignment">
-                    <a href="https://mockitt.wondershare.com/proto/pW2L4bYksb8q1vI77UN6kO/sharing?view_mode=device&screen=rbpU89SdAxX7P32U9&canvasId=rcU89TjAK3ef4gm"
-                        target="new_tab">
-                        <h3>UML Diagram</h3>
-                    </a>
-                    <a href="https://mockitt.wondershare.com/proto/pW2L4bYksb8q1vI77UN6kO/sharing?view_mode=device&screen=rbpU89SdAxX7P32U9&canvasId=rcU89TjAK3ef4gm"
-                        target="new_tab">
-                        <img src="resources/images/gui_prototype.jpg">
-                    </a>
-                    <p>After the first implementation, we created this prototype UI for a web-based application.</p>
+                    <article class="deliverable-card">
+                        <a href="https://docs.google.com/document/d/1YrflCgTXKnXctKVN0BP4xAsHggMdlEQaijx5MlEGXt4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <img src="resources/images/design_doc.jpg" alt="Design Document">
+                            <h3>Design Document</h3>
+                        </a>
+                        <p>Our detailed implementation plan and architectural design.</p>
+                    </article>
 
-                </th>
-                <th class="assignment">
-                    <a href="https://youtu.be/Gpv9mRMa-eU?si=dgM0ZvMc2cjtF8QZ">
-                        <h3>Second Sprint</h3>
-                    </a>
-                    <iframe width="200" height="200" src="https://www.youtube.com/embed/UCepXDLJhro?si=IRm0Ajb4X2tQIXqA"
-                        title="Second Sprint Youtube" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p>For the second sprint, we implemented our prototype using JavaFX and XML.</p>
+                    <article class="deliverable-card">
+                        <a href="resources/files/UML Diagram.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="resources/images/uml_diagram.jpg" alt="UML Diagram">
+                            <h3>UML Diagram</h3>
+                        </a>
+                        <p>Class structure and system architecture created before coding sprints began.</p>
+                    </article>
 
-                </th>
-            </tr>
-        </tbody>
-        <tfoot>
+                    <article class="deliverable-card video-card">
+                        <a href="https://youtu.be/Gpv9mRMa-eU?si=dgM0ZvMc2cjtF8QZ" target="_blank" rel="noopener noreferrer">
+                            <div class="video-embed">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/Gpv9mRMa-eU?si=l4NpBwBWqwDG-zs_" title="First Sprint Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <h3>First Sprint Demo</h3>
+                        </a>
+                        <p>Sprint 1 focused on implementing high-priority requirements for a functional application.</p>
+                    </article>
 
-        </tfoot>
-    </table>
+                    <article class="deliverable-card">
+                        <a href="https://mockitt.wondershare.com/proto/pW2L4bYksb8q1vI77UN6kO/sharing?view_mode=device&screen=rbpU89SdAxX7P32U9&canvasId=rcU89TjAK3ef4gm" target="_blank" rel="noopener noreferrer">
+                            <img src="resources/images/gui_prototype.jpg" alt="GUI Prototype">
+                            <h3>GUI Prototype</h3>
+                        </a>
+                        <p>Web-based UI prototype created after the first implementation phase.</p>
+                    </article>
+
+                    <article class="deliverable-card video-card">
+                        <a href="https://youtu.be/UCepXDLJhro?si=IRm0Ajb4X2tQIXqA" target="_blank" rel="noopener noreferrer">
+                            <div class="video-embed">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/UCepXDLJhro?si=IRm0Ajb4X2tQIXqA" title="Second Sprint Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <h3>Second Sprint Demo</h3>
+                        </a>
+                        <p>Sprint 2 implementation using JavaFX and XML for the final deliverable.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>Last Updated: 05/06/2026</p>
+        </footer>
+    </div>
+
+    <script src="/resources/javascript/addNav.js" defer></script>
 </body>
-<script src="scripts/addNav.js"></script>
-
 </html>

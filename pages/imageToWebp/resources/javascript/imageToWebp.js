@@ -2,31 +2,34 @@
 const dropArea = document.getElementById('drop-area');
 const fileElem = document.getElementById('fileElem');
 const output = document.getElementById('output');
+const fileButton = document.querySelector('.file-button');
 
+// Button click handler
+fileButton.addEventListener('click', () => {
+    fileElem.click();
+});
+
+// Drag and drop handlers
 dropArea.addEventListener('dragover', e => {
     e.preventDefault();
-    dropArea.style.background = '#f2d5ea';
+    dropArea.classList.add('drag-over');
 });
 dropArea.addEventListener('dragleave', e => {
-    dropArea.style.background = '';
+    dropArea.classList.remove('drag-over');
 });
 dropArea.addEventListener('drop', e => {
     e.preventDefault();
-    dropArea.style.background = '';
+    dropArea.classList.remove('drag-over');
     handleFiles(e.dataTransfer.files);
 });
 fileElem.addEventListener('change', e => {
     handleFiles(e.target.files);
 });
-/** Converts image files to WebP format 
- * @param {FileList} files - The list of files dropped or selected.
- * 
-*/
 function handleFiles(files) {
     if (!files.length) return;
     const file = files[0];
     if (!file.type.startsWith('image/')) {
-        output.innerHTML = 'Please drop an image file.';
+        output.innerHTML = '<p>Please drop an image file.</p>';
         return;
     }
     const reader = new FileReader();
@@ -44,7 +47,7 @@ function handleFiles(files) {
                 // (find string that starts with a dot, and is followed by any characters except a dot 
                 // to the '$' end of the string)
                 const originalName = file.name.replace(/\.[^/.]+$/, ".webp");
-                output.innerHTML = `<a href=\"${url}\" download=\"${originalName}\">Download .webp</a><br><img src=\"${url}\" style=\"max-width:400px;max-height:400px;\">`;
+                output.innerHTML = `<a href="${url}" download="${originalName}" class="download-link">Download .webp</a><img src="${url}" alt="Converted WebP image" style="margin-top: 1rem;">`;
             }, 'image/webp');
         };
         img.src = e.target.result;

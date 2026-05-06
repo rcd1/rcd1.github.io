@@ -1,17 +1,95 @@
-#drop-area {
-    padding: 40px;
+.converter-panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+}
+
+.converter-panel h2 {
+    margin: 0 0 1rem;
+    color: var(--muted);
+    font-size: 1.45rem;
+}
+
+.drop-zone {
+    padding: 2rem;
     text-align: center;
-    color: #b2a1b9;
-    margin: 40px auto;
-    width: auto;
+    border: 2px dashed var(--border);
+    border-radius: calc(var(--radius) - 0.25rem);
+    margin-bottom: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+}
+
+.drop-zone:hover,
+.drop-zone.drag-over {
+    background: rgba(179, 132, 199, 0.1);
+    border-color: var(--accent);
+}
+
+.drop-zone p {
+    margin: 0 0 1rem;
+    color: var(--text);
+}
+
+.file-button {
+    background: var(--border);
+    color: #080310;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.file-button:hover,
+.file-button:focus-visible {
+    background: var(--accent);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.output-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    border: 1px solid rgba(179, 132, 199, 0.3);
+    border-radius: calc(var(--radius) - 0.25rem);
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.output-area p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.output-area img {
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    margin-top: 1rem;
+    border-radius: calc(var(--radius) - 0.25rem);
 }
 
-#output {
-    margin-top: 20px;
+.download-link {
+    display: inline-block;
+    background: var(--border);
+    color: #080310;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
-tbody th {
-    height: 30vh;
+.download-link:hover,
+.download-link:focus-visible {
+    background: var(--accent);
+    transform: translateY(-2px);
+    outline: none;
 }

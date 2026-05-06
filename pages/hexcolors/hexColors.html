@@ -2,72 +2,116 @@
 <!--Ryan Davis Wrote This-->
 <html lang="en">
 <head>
-    <title></title>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Random color palette generator for design inspiration.">
+    <title>Hex Colors | rcd1.github.io</title>
+    <link rel="stylesheet" href="/resources/css/styles.css">
     <link rel="stylesheet" href="resources/css/hexColors.css">
-    <script src="resources/javascript/hexColors.js"></script>
-    <script src="resources/javascript/randomTitles.js"></script>
+    <script src="/resources/javascript/randomTitles.js" defer></script>
 </head>
-
 <body>
-    <table>
-        <tbody>
-            <tr>
-                <td colspan="4">
-                    A Color Generator
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="box1"
-                        onclick="randColors(document.getElementById('box1'), document.getElementById('box1text'));">
-                    </div>
-                </td>
-                <td>
-                    <div id="box2"
-                        onclick="randColors(document.getElementById('box2'), document.getElementById('box2text'));">
-                    </div>
-                </td>
-                <td>
-                    <div id="box3"
-                        onclick="randColors(document.getElementById('box3'), document.getElementById('box3text'));">
-                    </div>
-                </td>
-                <td>
-                    <div id="box4"
-                        onclick="randColors(document.getElementById('box4'), document.getElementById('box4text'));">
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th id="box1text" onclick="copyCode(this.id)">#e08cd9</th>
-                <th id="box2text" onclick="copyCode(this.id)">#2eea1a</th>
-                <th id="box3text" onclick="copyCode(this.id)">#aa6686</th>
-                <th id="box4text" onclick="copyCode(this.id)">#b84d4d</th>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <button onclick="randColors(document.getElementById('box1'), document.getElementById('box1text'));
-            randColors(document.getElementById('box2'), document.getElementById('box2text'));
-            randColors(document.getElementById('box3'), document.getElementById('box3text'));
-            randColors(document.getElementById('box4'), document.getElementById('box4text'));">
-                        Click to generate a full set of colors!
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <p> You can click individual boxes to regenerate their color as well.</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <p> You can also click the color codes to copy them!</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Tool</p>
+                <h1>Color Palette Generator</h1>
+                <p class="lead">Generate beautiful random color palettes. Click boxes to regenerate, click color codes to copy.</p>
+            </div>
+        </header>
 
+        <nav id="nav" class="site-nav" aria-label="Primary navigation"></nav>
+
+        <main>
+            <section class="color-generator" aria-labelledby="generator-heading">
+                <h2 id="generator-heading">Generate Colors</h2>
+                
+                <div class="color-grid">
+                    <article class="color-box">
+                        <div id="box1" class="color-display" data-code="box1text"></div>
+                        <code id="box1text" class="color-code">#e08cd9</code>
+                    </article>
+
+                    <article class="color-box">
+                        <div id="box2" class="color-display" data-code="box2text"></div>
+                        <code id="box2text" class="color-code">#2eea1a</code>
+                    </article>
+
+                    <article class="color-box">
+                        <div id="box3" class="color-display" data-code="box3text"></div>
+                        <code id="box3text" class="color-code">#aa6686</code>
+                    </article>
+
+                    <article class="color-box">
+                        <div id="box4" class="color-display" data-code="box4text"></div>
+                        <code id="box4text" class="color-code">#b84d4d</code>
+                    </article>
+                </div>
+
+                <div class="button-group">
+                    <button id="generate-all" class="generate-button">Generate New Palette</button>
+                </div>
+
+                <div class="instructions">
+                    <p><strong>Click individual boxes</strong> to regenerate their color</p>
+                    <p><strong>Click color codes</strong> to copy them to your clipboard</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>Last Updated: 05/06/2026</p>
+        </footer>
+    </div>
+
+    <script src="resources/javascript/hexColors.js" defer></script>
+    <script src="/resources/javascript/addNav.js" defer></script>
+    <script>
+        // Initialize color boxes with event listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            const boxes = ['box1', 'box2', 'box3', 'box4'];
+            
+            // Generate initial colors on page load
+            boxes.forEach(boxId => {
+                const boxElement = document.getElementById(boxId);
+                const codeElement = document.getElementById(boxId + 'text');
+                randColors(boxElement, codeElement);
+            });
+            
+            // Set up event listeners
+            boxes.forEach(boxId => {
+                const boxElement = document.getElementById(boxId);
+                const codeElement = document.getElementById(boxId + 'text');
+                
+                boxElement.addEventListener('click', () => {
+                    randColors(boxElement, codeElement);
+                });
+                
+                codeElement.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    copyCode(codeElement.id);
+                    showCopyFeedback(codeElement);
+                });
+            });
+            
+            document.getElementById('generate-all').addEventListener('click', () => {
+                boxes.forEach(boxId => {
+                    const boxElement = document.getElementById(boxId);
+                    const codeElement = document.getElementById(boxId + 'text');
+                    randColors(boxElement, codeElement);
+                });
+            });
+        });
+        
+        function showCopyFeedback(element) {
+            const originalText = element.innerText;
+            element.classList.add('copied');
+            element.innerText = 'Copied!';
+            setTimeout(() => {
+                element.innerText = originalText;
+                element.classList.remove('copied');
+            }, 1500);
+        }
+    </script>
+</body>
 </html>
