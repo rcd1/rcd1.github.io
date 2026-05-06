@@ -1,112 +1,88 @@
 <!DOCTYPE html>
 <!--Ryan Davis Wrote This-->
-
 <html lang="en">
 <head>
-    <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of projects by Ryan Davis, including web tools, games, and software development.">
+    <title>Projects | rcd1.github.io</title>
     <link rel="stylesheet" href="/resources/css/styles.css">
-    <link rel="stylesheet" href="resources/css/projects.css">
-    <link rel="preload" href="/resources/images/backgrounds/myplanet.webp" as="image">
-    <script src="scripts/randomTitles.js"></script>
+    <script src="/resources/javascript/randomTitles.js" defer></script>
     <style>
         body {
             background-image: url(/resources/images/backgrounds/myplanet.webp);
             background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
-
 <body>
-    <table class="outer_table">
-        <thead>
-            <tr>
-                <th colspan="4">
-                    <h1>My Projects</h1>
-                </th>
-            </tr>
-            <tr id="nav">
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Projects</p>
+                <h1>The Code Zone</h1>
+                <p class="lead">Take a look at some of the things I made~</p>
+            </div>
+        </header>
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>
-                    <a href="../hexcolors/hexColors.html" target="new_tab">
-                        <h2>Silly Little Color Generator</h2>
-                    </a>
-                    <a href="../hexcolors/hexColors.html" target="new_tab">
-                        <img src="resources/images/hexColors.jpg">
-                    </a>
-                    <p>I wanted random color palettes, so I got them using Javascript!</p>
-                </th>
-                <th>
-                    <a href="../autoclicker/autoclicker.html" target="new_tab">
-                        <h2>Python Autoclicker</h2>
-                    </a>
-                    <a href="../autoclicker/autoclicker.html" target="new_tab">
-                        <img src="resources/images/autoclicker.jpg">
-                    </a>
-                    <p>I play Cookie Clicker from time to time and I don't trust google to get me one without viruses,
-                        so I used the python to make my own! </p>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="../msjn/msjn.html" target="new_tab">
-                        <h2>Software Development Final Project: Mock Degree Auditor</h2>
-                    </a>
-                    <a href="../msjn/msjn.html" target="new_tab">
-                        <img src="resources/images/courseWorks.jpg">
-                    </a>
-                    <p>For my Software Development Course, our group went through the full development lifecycle for an
-                        application similar to <a
-                            href="https://sc.edu/about/offices_and_divisions/advising/advisor_toolbox/advising_technology/degreeworks/degreeworks_advisors/index.php">DegreeWorks</a>,
-                        our school's degree auditing system. Programmed in Java and JavaFX!</p>
-                </th>
-                <th>
-                    <a href="https://sccapstone.github.io/PixelPerfect/" target="new_tab">
-                        <h2>Capstone Computing Project: Jack Rabbit and the H.A.N.D.S.</h2>
-                    </a>
-                    <a href="https://sccapstone.github.io/PixelPerfect/" target="new_tab">
-                        <img src="resources/images/title.jpg">
-                    </a>
-                    <p>For The University of South Carolina's Big Senior Project (Dubbed the <i>Capstone Computing
-                            Project</i>),
-                        my group had created a short platforming game in Unity Game Engine. You can checkout the page we
-                        made
-                        for the final release as well as the <a href="https://github.com/SCCapstone/PixelPerfect">Github
-                            Repository</a> if you want to!</p>
+        <nav id="nav" class="site-nav" aria-label="Primary navigation"></nav>
 
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="../imageToWebp/imageToWebp.html" target="new_tab">
-                        <h2>An Image to .Webp Converter</h2>
-                    </a>
-                    <a href="../imageToWebp/imageToWebp.html" target="new_tab">
-                        <img src="resources/images/imageToWebp.jpg">
-                    </a>
-                    <p>My background images used to be very large .png files, I saw other websites that could convert
-                        images to .webp, so I wanted to be able to do it here as well.</p>
-                </th>
-                <th>
-                    <a href="files/Squash_The_Creeps.zip" target="new_tab" download>
-                        <h2>Godot Project: Squash The Creeps</h2>
-                    </a>
-                    <a href="files/Squash_The_Creeps.zip" target="new_tab" download>
-                        <img src="resources/images/game_1.jpg">
-                    </a>
-                    <p>I followed one of the tutorials that <a href="https://docs.godotengine.org/en/stable/getting_started/first_3d_game/index.html" target="_blank">Godot Game Engine</a> provided to create this game. You can click the image or the link above to download it and try yourself! I got an introduction to how the engine works, and I also implemented a save and load system to store the player's highscore.</p>
-                </th>
-            </tr>
-        </tbody>
-        <tfoot>
-        </tfoot>
-    </table>
+        <main class="projects-grid">
+            <article class="project-card">
+                <a href="../hexcolors/hexColors.html" target="_blank" rel="noopener noreferrer">
+                    <img src="resources/images/hexColors.jpg" alt="Hex Colors project screenshot">
+                    <h3>Silly Little Color Generator</h3>
+                </a>
+                <p>I wanted random color palettes, so I got them using Javascript!</p>
+            </article>
+
+            <article class="project-card">
+                <a href="../autoclicker/autoclicker.html" target="_blank" rel="noopener noreferrer">
+                    <img src="resources/images/autoclicker.jpg" alt="Autoclicker project screenshot">
+                    <h3>Python Autoclicker</h3>
+                </a>
+                <p>I play Cookie Clicker from time to time and I don't trust google to get me one without viruses, so I used Python to make my own!</p>
+            </article>
+
+            <article class="project-card">
+                <a href="../msjn/msjn.html" target="_blank" rel="noopener noreferrer">
+                    <img src="resources/images/courseWorks.jpg" alt="Mock Degree Auditor project screenshot">
+                    <h3>Software Development Final Project: Mock Degree Auditor</h3>
+                </a>
+                <p>For my Software Development Course, our group went through the full development lifecycle for an application similar to <a href="https://sc.edu/about/offices_and_divisions/advising/advisor_toolbox/advising_technology/degreeworks/degreeworks_advisors/index.php" target="_blank" rel="noopener noreferrer">DegreeWorks</a>, our school's degree auditing system. Programmed in Java and JavaFX!</p>
+            </article>
+
+            <article class="project-card">
+                <a href="https://sccapstone.github.io/PixelPerfect/" target="_blank" rel="noopener noreferrer">
+                    <img src="resources/images/title.jpg" alt="Capstone project screenshot">
+                    <h3>Capstone Computing Project: Jack Rabbit and the H.A.N.D.S.</h3>
+                </a>
+                <p>For The University of South Carolina's Big Senior Project (Dubbed the <em>Capstone Computing Project</em>), my group created a short platforming game in Unity Game Engine. You can check out the page we made for the final release as well as the <a href="https://github.com/SCCapstone/PixelPerfect" target="_blank" rel="noopener noreferrer">GitHub Repository</a> if you want to!</p>
+            </article>
+
+            <article class="project-card">
+                <a href="../imageToWebp/imageToWebp.html" target="_blank" rel="noopener noreferrer">
+                    <img src="resources/images/imageToWebp.jpg" alt="Image to WebP converter screenshot">
+                    <h3>An Image to .Webp Converter</h3>
+                </a>
+                <p>My background images used to be very large .png files, I saw other websites that could convert images to .webp, so I wanted to be able to do it here as well.</p>
+            </article>
+
+            <article class="project-card">
+                <a href="files/Squash_The_Creeps.zip" target="_blank" rel="noopener noreferrer" download>
+                    <img src="resources/images/game_1.jpg" alt="Squash The Creeps game screenshot">
+                    <h3>Godot Project: Squash The Creeps</h3>
+                </a>
+                <p>A simple game made with Godot engine.</p>
+            </article>
+        </main>
+
+        <footer class="page-footer">
+            <p>Last Updated: 05/06/2025</p>
+        </footer>
+    </div>
 </body>
-<script src="/resources/javascript/addNav.js"></script>
-
+<script src="/resources/javascript/addNav.js" defer></script>
 </html>

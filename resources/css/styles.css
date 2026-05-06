@@ -202,6 +202,86 @@ details summary::marker,
     }
 }
 
+/* Projects page styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: calc(var(--radius) - 0.25rem);
+    margin-bottom: 0.75rem;
+}
+
+.project-card h3 {
+    margin: 0 0 0.5rem;
+    color: var(--muted);
+    font-size: 1.25rem;
+}
+
+.project-card p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Art gallery styles */
+.gallery {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+}
+
+.gallery h2 {
+    margin: 0 0 1rem;
+    color: var(--muted);
+    font-size: 1.45rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    transition: transform 0.2s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-grid a {
+    display: block;
+    text-decoration: none;
+}
+
 /* Custom scrollbars */
 ::-webkit-scrollbar {
     width: 6px;
